@@ -1,0 +1,27 @@
+{
+  "pathfinder_seconds": 50.586475,
+  "wcet_unit": "5 cost units per ARM instruction",
+  "without_pathfinder": {
+    "otawa_seconds": 0.119973,
+    "wcet": 379310,
+    "solver_seconds": {
+      "scip": 0.617919,
+      "highs": 0.065051,
+      "fscip": 1.011687
+    }
+  },
+  "with_pathfinder": {
+    "otawa_seconds": 0.169998,
+    "wcet": 323075,
+    "solver_seconds": {
+      "scip": 0.618098,
+      "highs": 0.115334,
+      "fscip": 1.011821
+    }
+  },
+  "ffx_validation": {
+    "valid_for_benchmark_inputs": true,
+    "added_constraints": 40,
+    "violated_constraints": 0
+  }
+}
