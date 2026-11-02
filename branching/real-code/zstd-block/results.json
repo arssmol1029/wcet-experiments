@@ -27,5 +27,9 @@
   "measured_elf_sha256": "6227a6dcad3e53057b84f48aaac44b3b4b156259e5ee2a69da5c87b509044aee",
   "ordinary_ff": "kernel.ff; tied to measured ELF and configured bounds",
   "fscip_environment": "macOS ARM64; FSCIP 4 workers, 900 s limit, two models concurrently; original constraint order",
-  "input_profile": "4096-byte block, virtual IPET"
+  "input_profile": "4096-byte block, virtual IPET",
+  "pathfinder_followup": {
+    "status": "INCOMPLETE",
+    "diagnosis": "A scanner-fixed build passed the CFG assertion and then failed on an unhandled empty state. A subsequent bottom-state experiment failed on an absent CFG summary; no full FFX."
+  }
 }

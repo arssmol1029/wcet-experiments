@@ -27,5 +27,11 @@
   "measured_elf_sha256": "643c194033b5cfe21c7b55eab5af7be3df64d0d4bd82161ed482307f54b051f5",
   "ordinary_ff": "kernel.ff; tied to measured ELF and configured bounds",
   "fscip_environment": "macOS ARM64; FSCIP 4 workers, 900 s limit, two models concurrently; original constraint order",
-  "input_profile": "PCRE2-8, prepared Nmap patterns, reduced CFG"
+  "input_profile": "PCRE2-8, prepared Nmap patterns, reduced CFG",
+  "pathfinder_followup": {
+    "status": "COMPLETE with iterator fix",
+    "facts": 43,
+    "ffx_validation": "NOT ESTABLISHED: full FFX export after a context-length guard contains an impossible ILP row caused by signed integer overflow; no valid WCET.",
+    "wcet": null
+  }
 }
