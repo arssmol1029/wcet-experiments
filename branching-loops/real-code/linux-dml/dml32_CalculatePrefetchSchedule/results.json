@@ -58,6 +58,8 @@
     "constraints": 34204,
     "ffx_validation": "PASS on 256 enumerated ARM/C inputs: all 1421 added constraints satisfied; not proven for the full input domain.",
     "solver_environment": "macOS ARM64; HiGHS 1.15.1, SCIP 10.0.3, FSCIP 4 workers; 900 s limit",
-    "pathfinder_patch": "../branch-predicate.patch"
+    "pathfinder_patch": "../branch-predicate.patch",
+    "ffx_comparison": "Identical to the earlier unpatched merge 128 FFX except metadata; the ILP is byte-identical. The branch predicate patch effect is not isolated.",
+    "solver_measurement": "Repeated measurement on a previously solved identical ILP."
   }
 }
