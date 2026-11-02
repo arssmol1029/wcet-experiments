@@ -1,0 +1,104 @@
+{
+  "status": "REJECTED_FULL_FFX_TRANSFER",
+  "profiles": 1,
+  "native_oracle_equal": true,
+  "same_CFG_variables_calls": true,
+  "same_objective_domains": true,
+  "all_base_rows_preserved": true,
+  "base_check": {
+    "rows": 132,
+    "rejected_rows": 0,
+    "violating_profiles": [],
+    "worst_violation": 0,
+    "first_counterexamples": [],
+    "all_zero_observed_rows": 0
+  },
+  "ffx_added_check": {
+    "rows": 4,
+    "rejected_rows": 2,
+    "violating_profiles": [
+      0
+    ],
+    "worst_violation": 7099,
+    "first_counterexamples": [
+      {
+        "row": "c134",
+        "profile": 0,
+        "lhs": 10363,
+        "operator": "<=",
+        "rhs": 3264,
+        "violation": 7099,
+        "terms": [
+          {
+            "variable": "x84",
+            "coefficient": 1,
+            "count": 24
+          },
+          {
+            "variable": "x91",
+            "coefficient": 1,
+            "count": 47
+          },
+          {
+            "variable": "x119",
+            "coefficient": 1,
+            "count": 10268
+          },
+          {
+            "variable": "x126",
+            "coefficient": 1,
+            "count": 24
+          }
+        ]
+      },
+      {
+        "row": "c135",
+        "profile": 0,
+        "lhs": 10364,
+        "operator": "<=",
+        "rhs": 4352,
+        "violation": 6012,
+        "terms": [
+          {
+            "variable": "x64",
+            "coefficient": 1,
+            "count": 24
+          },
+          {
+            "variable": "x84",
+            "coefficient": 1,
+            "count": 24
+          },
+          {
+            "variable": "x91",
+            "coefficient": 1,
+            "count": 47
+          },
+          {
+            "variable": "x119",
+            "coefficient": 1,
+            "count": 10268
+          },
+          {
+            "variable": "x131",
+            "coefficient": 1,
+            "count": 1
+          }
+        ]
+      }
+    ],
+    "all_zero_observed_rows": 2
+  },
+  "added_rows": 4,
+  "admitted_added_rows": 2,
+  "observed_cost_min": 232460,
+  "observed_cost_max": 232460,
+  "elapsed_seconds": 0.006161697208881378,
+  "source_partition_gate": "Requires fixed-input/complete-class proof in SOURCE_PROOF.md; samples alone are not proof",
+  "sha256": {
+    "/dev/shm/otawa-ffx-validation-20261026/optimized-pairs/frr-baseline/base/model/model.lp": "88f17d23698395e71f9119650a05bfdc54b8adb44c5cddda9ff5074dbdde4997",
+    "/dev/shm/otawa-ffx-validation-20261026/optimized-pairs/frr-baseline/full/model/model.lp": "cbd2c608d3e3a7b6932536f9287673e692851e40e77c078ac66bfea9c0976ec8",
+    "/dev/shm/otawa-ffx-validation-20261026/trace/frr-baseline/run01/counts.tsv": "b4b5cd02cfccd21df59a5d74158289067d2a4b37c9b9692f968296b0510003bc",
+    "/dev/shm/otawa-ffx-validation-20261026/trace/frr-baseline/run01/summary.tsv": "019a8214183faa94f10e7837f2b17a6b18837c0db24a8885e672a872554e2481"
+  }
+}

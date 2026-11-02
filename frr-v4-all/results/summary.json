@@ -1,0 +1,73 @@
+{
+  "code": "frr-v4-all",
+  "pathfinder_wall_seconds": 524.1868528537452,
+  "pathfinder_facts": 3376,
+  "phases": {
+    "base": {
+      "model_sha256": "93a5e85ad04ab565d3231c3932f8d8bf91151f3cf66e5cb9c06e26d424b05469",
+      "otawa_export_wall_seconds": 0.3713314738124609,
+      "source_admitted": true,
+      "solvers": {
+        "highs": {
+          "status": "OPTIMAL",
+          "objective": 272110.0,
+          "wall_seconds": 0.16575177013874054,
+          "native_seconds": 0.03,
+          "exact_integer_witness": "VALID",
+          "exact_goal": "272110",
+          "validation": "VALID"
+        },
+        "scip": {
+          "status": "OPTIMAL",
+          "objective": 272110.0,
+          "wall_seconds": 0.7688471712172031,
+          "native_seconds": 0.13,
+          "exact_integer_witness": "VALID",
+          "exact_goal": "272110",
+          "validation": "VALID"
+        },
+        "fscip": {
+          "status": "OPTIMAL",
+          "wall_seconds": 1.0122504960745573,
+          "native_seconds": 0.2,
+          "exact_goal": "272110",
+          "exact_integer_witness": "VALID"
+        }
+      }
+    },
+    "full": {
+      "model_sha256": "4c0aec7fc76442b5d7a0331038fd6e9b5fb4a943fce48b9fe528b2265e4eb519",
+      "otawa_export_wall_seconds": 9.272449439391494,
+      "source_admitted": true,
+      "solvers": {
+        "highs": {
+          "status": "OPTIMAL",
+          "objective": 271750.0,
+          "wall_seconds": 0.8191818203777075,
+          "native_seconds": 0.68,
+          "exact_integer_witness": "VALID",
+          "exact_goal": "271750",
+          "validation": "VALID"
+        },
+        "scip": {
+          "status": "OPTIMAL",
+          "objective": 271750.0,
+          "wall_seconds": 1.1215348429977894,
+          "native_seconds": 0.4,
+          "exact_integer_witness": "VALID",
+          "exact_goal": "271750",
+          "validation": "VALID"
+        },
+        "fscip": {
+          "status": "OPTIMAL",
+          "wall_seconds": 1.3727635983377695,
+          "native_seconds": 0.76,
+          "exact_goal": "271750",
+          "exact_integer_witness": "VALID"
+        }
+      }
+    }
+  },
+  "cost_unit": "5 conditional cost units per ARM instruction; not seconds",
+  "solver_wall_includes_startup_and_reading": true
+}

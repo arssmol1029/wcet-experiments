@@ -1,0 +1,36 @@
+{
+  "status": "ALL_FULL_ROWS_PASS_SOURCE_TRACE_CLASSES",
+  "profiles": 1,
+  "native_oracle_equal": true,
+  "same_CFG_variables_calls": true,
+  "same_objective_domains": true,
+  "all_base_rows_preserved": true,
+  "base_check": {
+    "rows": 380,
+    "rejected_rows": 0,
+    "violating_profiles": [],
+    "worst_violation": 0,
+    "first_counterexamples": [],
+    "all_zero_observed_rows": 66
+  },
+  "ffx_added_check": {
+    "rows": 51,
+    "rejected_rows": 0,
+    "violating_profiles": [],
+    "worst_violation": 0,
+    "first_counterexamples": [],
+    "all_zero_observed_rows": 1
+  },
+  "added_rows": 51,
+  "admitted_added_rows": 51,
+  "observed_cost_min": 232355,
+  "observed_cost_max": 232355,
+  "elapsed_seconds": 0.016107739880681038,
+  "source_partition_gate": "Requires fixed-input/complete-class proof in SOURCE_PROOF.md; samples alone are not proof",
+  "sha256": {
+    "/dev/shm/otawa-ffx-validation-20261026/optimized-pairs/frr-vrfs/base/model/model.lp": "ea7363570ae3501266eb558ae04e5bef1e83aec6f5805ff52f10616cf81c362a",
+    "/dev/shm/otawa-ffx-validation-20261026/optimized-pairs/frr-vrfs/full/model/model.lp": "7a1f66d80ba748de54ab105eaadd9f39517bc8be3efe3fb489d8fcb94287dc8c",
+    "/dev/shm/otawa-ffx-validation-20261026/trace/frr-vrfs/run01/counts.tsv": "59271706bb8e6cf40e057a37e3f0d8087eba773dfe2f63caa09b37d16a8f4a04",
+    "/dev/shm/otawa-ffx-validation-20261026/trace/frr-vrfs/run01/summary.tsv": "fe531d83875cbc986b7e50312b4de201810ab705bd72a2db8b520719ffdfc908"
+  }
+}

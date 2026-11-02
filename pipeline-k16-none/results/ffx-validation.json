@@ -1,0 +1,36 @@
+{
+  "status": "ALL_FULL_ROWS_PASS_SOURCE_TRACE_CLASSES",
+  "profiles": 447,
+  "native_oracle_equal": true,
+  "same_CFG_variables_calls": true,
+  "same_objective_domains": true,
+  "all_base_rows_preserved": true,
+  "base_check": {
+    "rows": 1677,
+    "rejected_rows": 0,
+    "violating_profiles": [],
+    "worst_violation": 0,
+    "first_counterexamples": [],
+    "all_zero_observed_rows": 652
+  },
+  "ffx_added_check": {
+    "rows": 40,
+    "rejected_rows": 0,
+    "violating_profiles": [],
+    "worst_violation": 0,
+    "first_counterexamples": [],
+    "all_zero_observed_rows": 0
+  },
+  "added_rows": 40,
+  "admitted_added_rows": 40,
+  "observed_cost_min": 31070,
+  "observed_cost_max": 58640,
+  "elapsed_seconds": 1.0895936731249094,
+  "source_partition_gate": "Requires fixed-input/complete-class proof in SOURCE_PROOF.md; samples alone are not proof",
+  "sha256": {
+    "/dev/shm/otawa-ffx-validation-20261026/optimized-pairs/pipeline-baseline/base/model/model.lp": "0f4fa963a1092edeb8fd967d529462968b7673118bb8b3f80372c04bd8c528fa",
+    "/dev/shm/otawa-ffx-validation-20261026/optimized-pairs/pipeline-baseline/full/model/model.lp": "c5dceb7b9131af12cc6352eb73880f70e6c8cd79e46ec0f2aef47c8f22bf6663",
+    "/dev/shm/otawa-ffx-validation-20261026/trace/pipeline-baseline/run01/counts.tsv": "3fcb9397599e32b0cda25e77a25e0b1e883d82f15056999e862e6ecd2c99c248",
+    "/dev/shm/otawa-ffx-validation-20261026/trace/pipeline-baseline/run01/summary.tsv": "8ff40a237e048f636138c6314a537bbd9880dcda5836a36cfec2cceee220afa7"
+  }
+}

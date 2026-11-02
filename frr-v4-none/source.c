@@ -1,0 +1,129 @@
+#define ZEBRA_ROUTE_MAX 33// Maximum 33
+#define NUM_VRFS        4 // Can be any number
+#define NEXT_HOPS_MAX_NUM 4
+
+struct vrf vrf; // 643
+struct zebra_vrf zvrf; // 642
+int rmap; // INT
+
+// Count size in blocks of 4 bytes
+
+struct next_hop { // 1
+    int status;
+};
+
+typedef enum {
+	AFI_IP = 1,
+	AFI_IP6 = 2,
+	AFI_MAX = 3
+} afi_t;
+
+/* Subsequent Address Family Identifier. */
+typedef enum {
+	SAFI_UNICAST = 1,
+	SAFI_MAX = 2
+} safi_t;
+
+struct route_table{ // 1 + 1 * NEXT_HOPS_MAX_NUM = 5
+    int status;
+    struct next_hop next_hops[NEXT_HOPS_MAX_NUM]; // 1 * NEXT_HOPS_MAX_NUM
+};
+
+struct route_map{ // 2
+    int name;
+    int use_count;
+};
+
+struct zebra_rmap{  // 3
+	int name;
+	struct route_map map;
+};
+
+struct zebra_vrf { //642
+	struct zebra_rmap proto_rm[AFI_MAX][ZEBRA_ROUTE_MAX + 1]; // 3 * 3 * (ZEBRA_ROUTE_MAX + 1) = 306
+	struct zebra_rmap nht_rm[AFI_MAX][ZEBRA_ROUTE_MAX + 1]; // 3 * 3 * (ZEBRA_ROUTE_MAX + 1) = 306
+	struct route_table table[AFI_MAX][SAFI_MAX]; // 3 * 2 * 5 = 30
+};
+
+struct vrf { // 49
+	/* Zebra internal VRF status */
+	int status;
+	struct zebra_vrf info;
+};
+
+void route_map_counter_increment(struct route_map *map)
+{
+	if (map)
+		map->use_count++;
+}
+
+void zebra_evaluate_rnh(struct zebra_vrf *zvrf, int vrf_id, afi_t afi, int force,
+			int p, safi_t safi)
+{
+    for(int i = 0; i < NEXT_HOPS_MAX_NUM; i++)
+        zvrf->table[afi][safi].next_hops[i].status = 1;
+}
+
+#define PROTO_RM_NAME(zvrf, afi, rtype) zvrf.proto_rm[afi][rtype].name
+#define NHT_RM_NAME(zvrf, afi, rtype) zvrf.nht_rm[afi][rtype].name
+#define PROTO_RM_MAP(zvrf, afi, rtype) zvrf.proto_rm[afi][rtype].map
+#define NHT_RM_MAP(zvrf, afi, rtype) zvrf.nht_rm[afi][rtype].map
+
+
+void zebra_nht_rm_update()
+{
+	int i = 0;
+	struct route_table table;
+	int rmap_name;
+	int afi_ip = 0;
+	int afi_ipv6 = 0;
+	struct route_map old;
+	int _placeholder = 0;
+
+        for(int vrf_id = 0; vrf_id < NUM_VRFS; vrf_id++){
+		zvrf = vrf.info;
+		for (i = 0; i <= ZEBRA_ROUTE_MAX; i++) {
+			rmap_name = NHT_RM_NAME(zvrf, AFI_IP, i);
+			if (rmap_name && rmap_name == rmap) {
+				old = NHT_RM_MAP(zvrf, AFI_IP, i);
+
+				if (!old.use_count)
+					route_map_counter_increment(
+						&NHT_RM_MAP(zvrf, AFI_IP, i));
+				/* There is single rib table for all protocols
+				 */
+				if (afi_ip == 0) {
+					table = zvrf.table[AFI_IP]
+							   [SAFI_UNICAST];
+
+						afi_ip = 1;
+
+						zebra_evaluate_rnh(
+							&zvrf, vrf_id, AFI_IP, 1, 0,
+							SAFI_UNICAST);
+					}
+			}
+
+			rmap_name = NHT_RM_NAME(zvrf, AFI_IP6, i);
+			if (rmap_name && (rmap_name == rmap)) {
+
+				old = NHT_RM_MAP(zvrf, AFI_IP6, i);
+
+				if (!old.use_count)
+					route_map_counter_increment(
+						&NHT_RM_MAP(zvrf, AFI_IP6, i));
+				if (afi_ipv6 == 0) {
+					table = zvrf.table[AFI_IP6]
+							   [SAFI_UNICAST];
+
+						afi_ipv6 = 1;
+
+						zebra_evaluate_rnh(
+							&zvrf, vrf_id, AFI_IP6, 1, 0,
+							SAFI_UNICAST);
+				}
+			}
+			_placeholder = 447;
+		}
+	}
+}
