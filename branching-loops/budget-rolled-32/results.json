@@ -1,0 +1,42 @@
+{
+  "iterations": 32,
+  "pathfinder_seconds": 1.028227,
+  "pathfinder_status": "COMPLETE",
+  "wcet_unit": "5 cost units per ARM instruction",
+  "environment": "OTAWA and Pathfinder: Linux x86-64 emulated; solvers: macOS ARM64",
+  "solver_settings": "HiGHS/SCIP: 1 thread; FSCIP: 4 workers; seed 0; presolve on; 60 s limit",
+  "sample_maximum": 5620,
+  "without_pathfinder": {
+    "otawa_seconds": 0.375369,
+    "wcet": 38675,
+    "solver_seconds": {
+      "highs": 0.029636,
+      "scip": 0.044525,
+      "fscip": 0.025406
+    },
+    "solver_status": {
+      "highs": "OPTIMAL",
+      "scip": "OPTIMAL",
+      "fscip": "OPTIMAL"
+    },
+    "variables": 57,
+    "constraints": 53,
+    "solver_nodes": {
+      "highs": 0.0,
+      "scip": 0.0,
+      "fscip": 0.0
+    },
+    "lp_relaxation": 38675.0
+  },
+  "with_pathfinder": {
+    "wcet": null
+  },
+  "ffx_validation": {
+    "scope": "finite sample, not all valid inputs",
+    "checked_inputs": 64,
+    "native_arm_agreement": true,
+    "added_constraints": 1,
+    "violated_constraints": 1,
+    "reason": "Automatic FFX excludes a concrete execution; complete FFX rejected."
+  }
+}

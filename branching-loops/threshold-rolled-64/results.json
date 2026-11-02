@@ -1,0 +1,40 @@
+{
+  "iterations": 64,
+  "pathfinder_seconds": 3.310609,
+  "pathfinder_status": "FAILED",
+  "wcet_unit": "5 cost units per ARM instruction",
+  "environment": "OTAWA and Pathfinder: Linux x86-64 emulated; solvers: macOS ARM64",
+  "solver_settings": "HiGHS/SCIP: 1 thread; FSCIP: 4 workers; seed 0; presolve on; 60 s limit",
+  "solver_execution": "solver runs sequential, while Pathfinder jobs were active",
+  "pathfinder_execution": "parallel Pathfinder jobs; host validation may overlap",
+  "pathfinder_reason": "SIGABRT: analysis_state.cpp assertion",
+  "concrete_maximum": 10950,
+  "without_pathfinder": {
+    "otawa_seconds": 0.367305,
+    "wcet": 57750,
+    "solver_seconds": {
+      "highs": 0.026109,
+      "scip": 0.038489,
+      "fscip": 0.026793
+    },
+    "solver_status": {
+      "highs": "OPTIMAL",
+      "scip": "OPTIMAL",
+      "fscip": "OPTIMAL"
+    },
+    "variables": 42,
+    "constraints": 40,
+    "solver_nodes": {
+      "highs": 0.0,
+      "scip": 0.0,
+      "fscip": 0.0
+    },
+    "lp_relaxation": 57750.0
+  },
+  "with_pathfinder": {
+    "wcet": null
+  },
+  "ffx_validation": {
+    "status": "not available; complete FFX or full model was not obtained"
+  }
+}

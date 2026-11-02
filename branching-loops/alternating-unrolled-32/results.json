@@ -1,0 +1,60 @@
+{
+  "iterations": 32,
+  "pathfinder_seconds": 10.794996,
+  "pathfinder_status": "COMPLETE",
+  "wcet_unit": "5 cost units per ARM instruction",
+  "environment": "OTAWA and Pathfinder: Linux x86-64 emulated; solvers: macOS ARM64",
+  "solver_settings": "HiGHS/SCIP: 1 thread; FSCIP: 4 workers; seed 0; presolve on; 60 s limit",
+  "concrete_maximum": 15625,
+  "without_pathfinder": {
+    "otawa_seconds": 0.374824,
+    "wcet": 28105,
+    "solver_seconds": {
+      "highs": 0.024946,
+      "scip": 0.045189,
+      "fscip": 0.023516
+    },
+    "solver_status": {
+      "highs": "OPTIMAL",
+      "scip": "OPTIMAL",
+      "fscip": "OPTIMAL"
+    },
+    "variables": 812,
+    "constraints": 779,
+    "solver_nodes": {
+      "highs": 0.0,
+      "scip": 0.0,
+      "fscip": 0.0
+    },
+    "lp_relaxation": 28105.0
+  },
+  "with_pathfinder": {
+    "otawa_seconds": 1.027449,
+    "wcet": 15625,
+    "solver_seconds": {
+      "highs": 0.025248,
+      "scip": 0.088387,
+      "fscip": 0.043315
+    },
+    "solver_status": {
+      "highs": "OPTIMAL",
+      "scip": "OPTIMAL",
+      "fscip": "OPTIMAL"
+    },
+    "variables": 812,
+    "constraints": 841,
+    "solver_nodes": {
+      "highs": 0.0,
+      "scip": 0.0,
+      "fscip": 0.0
+    },
+    "lp_relaxation": 27715.0
+  },
+  "ffx_validation": {
+    "scope": "complete scalar control classes",
+    "checked_inputs": 3,
+    "native_arm_agreement": true,
+    "added_constraints": 62,
+    "violated_constraints": 0
+  }
+}
