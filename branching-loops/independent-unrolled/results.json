@@ -1,0 +1,30 @@
+{
+  "pathfinder_seconds": 16.135855,
+  "wcet_unit": "5 cost units per ARM instruction",
+  "environment": "OTAWA and Pathfinder: Linux x86-64 emulated; solvers: macOS ARM64",
+  "concrete_maximum": 7075,
+  "without_pathfinder": {
+    "otawa_seconds": 0.370138,
+    "wcet": 7075,
+    "solver_seconds": {
+      "scip": 0.038644,
+      "highs": 0.029032,
+      "fscip": 0.02998
+    }
+  },
+  "with_pathfinder": {
+    "otawa_seconds": 0.376186,
+    "wcet": 7075,
+    "solver_seconds": {
+      "scip": null,
+      "highs": null,
+      "fscip": 0.02998
+    },
+    "same_model_as_without_pathfinder": true
+  },
+  "ffx_validation": {
+    "valid_for_benchmark_inputs": true,
+    "added_constraints": 0,
+    "violated_constraints": 0
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "pathfinder_seconds": 1.029787,
+  "wcet_unit": "5 cost units per ARM instruction",
+  "environment": "OTAWA and Pathfinder: Linux x86-64 emulated; solvers: macOS ARM64",
+  "concrete_maximum": 3050,
+  "without_pathfinder": {
+    "otawa_seconds": 0.376266,
+    "wcet": 9755,
+    "solver_seconds": {
+      "scip": 0.048336,
+      "highs": 0.026643,
+      "fscip": 0.027272
+    }
+  },
+  "with_pathfinder": {
+    "otawa_seconds": 0.380498,
+    "wcet": null,
+    "solver_seconds": {
+      "scip": null,
+      "highs": null,
+      "fscip": null
+    }
+  },
+  "ffx_validation": {
+    "valid_for_benchmark_inputs": false,
+    "added_constraints": 1,
+    "violated_constraints": 1,
+    "reason": "FFX rejects valid executions"
+  }
+}
