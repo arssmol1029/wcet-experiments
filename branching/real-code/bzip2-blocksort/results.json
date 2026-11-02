@@ -36,5 +36,12 @@
     "ffx_validation": "REJECTED: full ARM and native C BZ2_blockSort calls with nblock=1 agree; ARM takes the forbidden fallbackSort loop backedge 127 times. Reachability from the saved task harness is not established. Three of four FFX facts produced no ILP row.",
     "wcet": null,
     "diagnosis": "At ARM 0x1248c, OTAWA reports no written registers and no STRD writeback; concrete ARM increments r1 by 8. Pathfinder retains the old r1 value in the loop state. This mismatch is a suspected cause of the false fact, not a proven complete causal chain."
+  },
+  "semantics_probe": {
+    "pathfinder_seconds": 526.25286,
+    "pathfinder_facts": 4,
+    "result": "For this ELF, conservatively invalidating effects of two misdecoded instructions removes the previously rejected loop fact. This is not a general decoder fix.",
+    "ffx_validation": "NOT ESTABLISHED: new FFX contains other facts; signed integer overflow was confirmed while exporting a new constraint.",
+    "wcet": null
   }
 }
