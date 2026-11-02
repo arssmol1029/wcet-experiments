@@ -36,6 +36,28 @@
     "constraints": 47291,
     "otawa_seconds": 569.635677
   },
-  "ffx_validation": "UNPROVEN: exact solver witnesses; full FFX soundness against source domain not established.",
-  "fscip_environment": "macOS ARM64; FSCIP 4 workers, 900 s limit, two models concurrently; original constraint order"
+  "ffx_validation": "REJECTED: 27 added constraints violated by ARM/C executions among 256 enumerated inputs; model objective is not a valid WCET bound.",
+  "fscip_environment": "macOS ARM64; FSCIP 4 workers, 900 s limit, two models concurrently; original constraint order",
+  "with_fixed_pathfinder": {
+    "configuration": "v3, MAF, merge limit 128, branch predicate fix",
+    "pathfinder_seconds": 538.61807,
+    "pathfinder_facts": 273,
+    "otawa_seconds": 77.541805,
+    "model_objective": 266790,
+    "solver_seconds": {
+      "highs": 0.400264,
+      "scip": 0.458556,
+      "fscip": 0.561365
+    },
+    "solver_status": {
+      "highs": "OPTIMAL",
+      "scip": "OPTIMAL",
+      "fscip": "OPTIMAL"
+    },
+    "variables": 39953,
+    "constraints": 34204,
+    "ffx_validation": "PASS on 256 enumerated ARM/C inputs: all 1421 added constraints satisfied; not proven for the full input domain.",
+    "solver_environment": "macOS ARM64; HiGHS 1.15.1, SCIP 10.0.3, FSCIP 4 workers; 900 s limit",
+    "pathfinder_patch": "../branch-predicate.patch"
+  }
 }

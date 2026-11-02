@@ -1,0 +1,7 @@
+--- a/analysis_state.cpp
++++ b/analysis_state.cpp
+@@ -78 +78,3 @@
+-	List<LabelledPredicate> &relevant_preds = (isConditional(e->source()) && e->isTaken())
++	List<LabelledPredicate> &relevant_preds = (e->isTaken() && e->source()->isBasic()
++		&& e->source()->toBasic()->control()
++		&& e->source()->toBasic()->control()->isConditional())
