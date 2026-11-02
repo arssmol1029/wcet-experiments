@@ -1,0 +1,79 @@
+{
+  "upstream": "llvm/llvm-project",
+  "tag": "llvmorg-18.1.8",
+  "commit": "3b5b5c1ec4a3095ab096dd780e84d7ab81f3d7ff",
+  "files": [
+    {
+      "file": "muldf3.c",
+      "url": "https://raw.githubusercontent.com/llvm/llvm-project/3b5b5c1ec4a3095ab096dd780e84d7ab81f3d7ff/compiler-rt/lib/builtins/muldf3.c",
+      "bytes": 918,
+      "sha256": "e35d748cefd466cb17e4d0fd4ef9d92e0911fea97bb7a59ad138479ba9c0d553"
+    },
+    {
+      "file": "divdf3.c",
+      "url": "https://raw.githubusercontent.com/llvm/llvm-project/3b5b5c1ec4a3095ab096dd780e84d7ab81f3d7ff/compiler-rt/lib/builtins/divdf3.c",
+      "bytes": 986,
+      "sha256": "2c8850a107c4ab79d518d1c3246ff936dd28446c82e17c1f347717a36b7a88a8"
+    },
+    {
+      "file": "fp_mul_impl.inc",
+      "url": "https://raw.githubusercontent.com/llvm/llvm-project/3b5b5c1ec4a3095ab096dd780e84d7ab81f3d7ff/compiler-rt/lib/builtins/fp_mul_impl.inc",
+      "bytes": 4478,
+      "sha256": "5fd5ec9eaf57c983ed521f3501346660221d6f2d49d48d186b2046702b54d8c3"
+    },
+    {
+      "file": "fp_div_impl.inc",
+      "url": "https://raw.githubusercontent.com/llvm/llvm-project/3b5b5c1ec4a3095ab096dd780e84d7ab81f3d7ff/compiler-rt/lib/builtins/fp_div_impl.inc",
+      "bytes": 18698,
+      "sha256": "3f11a70cfba89f7f444da2b615bf9d507ab9db05ccd93a304843f2bb5b450d7e"
+    },
+    {
+      "file": "fp_lib.h",
+      "url": "https://raw.githubusercontent.com/llvm/llvm-project/3b5b5c1ec4a3095ab096dd780e84d7ab81f3d7ff/compiler-rt/lib/builtins/fp_lib.h",
+      "bytes": 14062,
+      "sha256": "ce8a20f81f2e13b9ac53423c065153531f439cdbee8815df50f3ba113db51ae5"
+    },
+    {
+      "file": "int_lib.h",
+      "url": "https://raw.githubusercontent.com/llvm/llvm-project/3b5b5c1ec4a3095ab096dd780e84d7ab81f3d7ff/compiler-rt/lib/builtins/int_lib.h",
+      "bytes": 5106,
+      "sha256": "b31130f10484636895daa13b91b63d47ea82b45547f29e4dd136b48a67854d30"
+    },
+    {
+      "file": "int_types.h",
+      "url": "https://raw.githubusercontent.com/llvm/llvm-project/3b5b5c1ec4a3095ab096dd780e84d7ab81f3d7ff/compiler-rt/lib/builtins/int_types.h",
+      "bytes": 7061,
+      "sha256": "26517abcfb05e989f4ac18b38779bc118637e0a5b3e44536c3733cc47b33026e"
+    },
+    {
+      "file": "int_endianness.h",
+      "url": "https://raw.githubusercontent.com/llvm/llvm-project/3b5b5c1ec4a3095ab096dd780e84d7ab81f3d7ff/compiler-rt/lib/builtins/int_endianness.h",
+      "bytes": 2804,
+      "sha256": "ec5175561075845b7b16a92ad5ecdfd42a284de2736dd07e4ca7011b75c37709"
+    },
+    {
+      "file": "int_util.h",
+      "url": "https://raw.githubusercontent.com/llvm/llvm-project/3b5b5c1ec4a3095ab096dd780e84d7ab81f3d7ff/compiler-rt/lib/builtins/int_util.h",
+      "bytes": 2221,
+      "sha256": "63d06198ab720a75c20bfd84be895c2746581b129168bae6201e7384bbb0473b"
+    },
+    {
+      "file": "int_math.h",
+      "url": "https://raw.githubusercontent.com/llvm/llvm-project/3b5b5c1ec4a3095ab096dd780e84d7ab81f3d7ff/compiler-rt/lib/builtins/int_math.h",
+      "bytes": 3783,
+      "sha256": "97d4f8e0be9cd48ff3153ca7ca5e88383e699c9c487fdb0c56dd2d26636c2296"
+    },
+    {
+      "file": "fp_mode.h",
+      "url": "https://raw.githubusercontent.com/llvm/llvm-project/3b5b5c1ec4a3095ab096dd780e84d7ab81f3d7ff/compiler-rt/lib/builtins/fp_mode.h",
+      "bytes": 852,
+      "sha256": "874aa9eee8990ae2a6f48127ddb48c3198a8fa741f634f93053ebac3f89e1e83"
+    },
+    {
+      "file": "fp_mode.c",
+      "url": "https://raw.githubusercontent.com/llvm/llvm-project/3b5b5c1ec4a3095ab096dd780e84d7ab81f3d7ff/compiler-rt/lib/builtins/fp_mode.c",
+      "bytes": 826,
+      "sha256": "0f626fefe2e19854549dfe598bd168a770bae7e1cab34b459871fabec4632f25"
+    }
+  ]
+}

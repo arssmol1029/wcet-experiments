@@ -1,0 +1,29 @@
+{
+  "pathfinder_seconds": 0.170493,
+  "wcet_unit": "5 cost units per ARM instruction",
+  "environment": "Linux x86-64; HiGHS 1.12.0, SCIP 9.2.2",
+  "input_domain": "0..1023",
+  "concrete_maximum": 315,
+  "without_pathfinder": {
+    "otawa_seconds": 0.06944,
+    "wcet": 320.0,
+    "solver_seconds": {
+      "highs": 0.032673,
+      "scip": 0.666644
+    }
+  },
+  "with_pathfinder": {
+    "otawa_seconds": 0.069671,
+    "wcet": 315.0,
+    "solver_seconds": {
+      "highs": 0.065164,
+      "scip": 0.617834
+    }
+  },
+  "ffx_validation": {
+    "checked_inputs": 1024,
+    "added_constraints": 5,
+    "violating_inputs": 0
+  },
+  "compiler_flags": "ARMv5TE, -O0, -fno-inline"
+}

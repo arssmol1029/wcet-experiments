@@ -1,0 +1,32 @@
+{
+  "source": "Linux v6.6 ffc253263a1375a65fa6c9f62a893e9767fbebfa, dml/dcn32/display_mode_vba_util_32.c",
+  "entry": "dml32_CalculateMetaAndPTETimes",
+  "input_contract": "0..2 active surfaces; non-overlapping input/output memory, nonzero divisors",
+  "pathfinder_seconds": 424.844825,
+  "wcet_unit": "5 cost units per ARM instruction",
+  "environment": "OTAWA and Pathfinder: Linux x86-64 emulated; solvers: macOS ARM64",
+  "without_pathfinder": {
+    "otawa_seconds": 1.36188,
+    "wcet": 224115.0,
+    "solver_seconds": {
+      "highs": 0.090452,
+      "scip": 0.086897
+    }
+  },
+  "with_pathfinder": {
+    "otawa_seconds": 4.378369,
+    "wcet": 221275.0,
+    "solver_seconds": {
+      "highs": 0.249639,
+      "scip": 0.19634
+    }
+  },
+  "ffx_validation": {
+    "scope": "finite sample, not all valid inputs",
+    "checked_inputs": 32,
+    "added_constraints": 496,
+    "constraints_touched": 352,
+    "violating_inputs": 0,
+    "native_arm_agreement": true
+  }
+}

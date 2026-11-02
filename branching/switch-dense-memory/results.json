@@ -1,0 +1,30 @@
+{
+  "pathfinder_seconds": 0.371227,
+  "wcet_unit": "5 cost units per ARM instruction",
+  "environment": "Linux x86-64; HiGHS 1.12.0, SCIP 9.2.2",
+  "input_domain": "0..1023",
+  "concrete_maximum": 275,
+  "without_pathfinder": {
+    "otawa_seconds": 0.069777,
+    "wcet": 275.0,
+    "solver_seconds": {
+      "highs": 0.03262,
+      "scip": 0.618801
+    }
+  },
+  "with_pathfinder": {
+    "otawa_seconds": 0.066815,
+    "wcet": 275.0,
+    "solver_seconds": {
+      "highs": 0.032633,
+      "scip": 0.625472
+    }
+  },
+  "ffx_validation": {
+    "checked_inputs": 1024,
+    "added_constraints": 1,
+    "violating_inputs": 0
+  },
+  "compiler_flags": "ARMv5TE, -O0, -fno-inline",
+  "flow_facts": "Ordinary FF enumerates 12 jump-table targets from this ELF; FFX is automatic."
+}

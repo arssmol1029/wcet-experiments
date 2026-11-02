@@ -1,0 +1,32 @@
+{
+  "source": "Linux v6.6 ffc253263a1375a65fa6c9f62a893e9767fbebfa, dml/dcn32/display_mode_vba_util_32.c",
+  "entry": "dml32_CalculateStutterEfficiency",
+  "input_contract": "1..4 active surfaces; non-overlapping input/output memory, nonzero divisors",
+  "pathfinder_seconds": 698.860673,
+  "wcet_unit": "5 cost units per ARM instruction",
+  "environment": "OTAWA and Pathfinder: Linux x86-64 emulated; solvers: macOS ARM64",
+  "without_pathfinder": {
+    "otawa_seconds": 2.319128,
+    "wcet": 301860.0,
+    "solver_seconds": {
+      "highs": 0.15039,
+      "scip": 0.197907
+    }
+  },
+  "with_pathfinder": {
+    "otawa_seconds": 28.723547,
+    "wcet": 293990.0,
+    "solver_seconds": {
+      "highs": 0.262327,
+      "scip": 0.252915
+    }
+  },
+  "ffx_validation": {
+    "scope": "finite sample, not all valid inputs",
+    "checked_inputs": 20,
+    "added_constraints": 1533,
+    "constraints_touched": 1261,
+    "violating_inputs": 0,
+    "native_arm_agreement": true
+  }
+}

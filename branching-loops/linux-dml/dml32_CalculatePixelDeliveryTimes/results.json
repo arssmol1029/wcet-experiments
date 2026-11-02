@@ -1,0 +1,32 @@
+{
+  "source": "Linux v6.6 ffc253263a1375a65fa6c9f62a893e9767fbebfa, dml/dcn32/display_mode_vba_util_32.c",
+  "entry": "dml32_CalculatePixelDeliveryTimes",
+  "input_contract": "0..2 active surfaces; non-overlapping input/output memory, nonzero divisors",
+  "pathfinder_seconds": 443.721691,
+  "wcet_unit": "5 cost units per ARM instruction",
+  "environment": "OTAWA and Pathfinder: Linux x86-64 emulated; solvers: macOS ARM64",
+  "without_pathfinder": {
+    "otawa_seconds": 1.152017,
+    "wcet": 95705.0,
+    "solver_seconds": {
+      "highs": 0.075099,
+      "scip": 0.076324
+    }
+  },
+  "with_pathfinder": {
+    "otawa_seconds": 6.825174,
+    "wcet": 93885.0,
+    "solver_seconds": {
+      "highs": 0.191766,
+      "scip": 0.142269
+    }
+  },
+  "ffx_validation": {
+    "scope": "finite sample, not all valid inputs",
+    "checked_inputs": 32,
+    "added_constraints": 802,
+    "constraints_touched": 745,
+    "violating_inputs": 0,
+    "native_arm_agreement": true
+  }
+}
