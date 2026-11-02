@@ -7,7 +7,7 @@
   "solver_settings": "HiGHS/SCIP: 1 thread; FSCIP: 4 workers; seed 0; presolve on; 60 s limit",
   "solver_execution": "solver runs sequential, while Pathfinder jobs were active",
   "pathfinder_execution": "parallel Pathfinder jobs; host validation may overlap",
-  "sample_maximum": 7350,
+  "sample_maximum": 8700,
   "without_pathfinder": {
     "otawa_seconds": 1.023987,
     "wcet": 75605,
@@ -53,10 +53,11 @@
     "lp_relaxation": 75344.5
   },
   "ffx_validation": {
-    "scope": "finite sample, not all valid inputs",
-    "checked_inputs": 64,
+    "scope": "all control classes via exhaustive first 9 requests and proof later requests cannot affect constraints",
+    "checked_prefixes": 19683,
     "native_arm_agreement": true,
     "added_constraints": 1335,
+    "ffx_facts_mapped": 1335,
     "violated_constraints": 0
   }
 }
