@@ -25,5 +25,6 @@
   "measured_elf_sha256": "1af6093e5906c7f5dd94657dac5f5c27e64872d7e9e62eb5371d536380481df1",
   "ordinary_ff": "kernel.ff; tied to measured ELF and configured bounds",
   "fscip_environment": "macOS ARM64; FSCIP 4 workers, 900 s limit, two models concurrently; original constraint order",
-  "input_profile": "32-block constructed BPF IR, one optimizer pass"
+  "input_profile": "32-block constructed BPF IR, one optimizer pass",
+  "pathfinder_diagnosis": "A later local diagnostic build reproduced stack exhaustion with recursive find_levels_r CFG (2485 processCFG frames); a guarded build stops explicitly because recursive summaries are unsupported. The original crash was not independently traced."
 }

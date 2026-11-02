@@ -32,5 +32,6 @@
   "measured_elf_sha256": "7d70400ed8f8504229843f2b40c6e3a244ec68edbf137d8d7ddd326ce61c270b",
   "ordinary_ff": "kernel.ff; tied to measured ELF and configured bounds",
   "fscip_environment": "macOS ARM64; FSCIP 4 workers, 900 s limit, two models concurrently; original constraint order",
-  "input_profile": "random32-96 policy, virtual IPET"
+  "input_profile": "random32-96 policy, virtual IPET",
+  "pathfinder_diagnosis": "After an ordinary FF removes one branch, the original Pathfinder labels the retained taken edge with the opposite predicate. A patched run continues the first previously rejected path; complete patched FFX validation is pending."
 }
