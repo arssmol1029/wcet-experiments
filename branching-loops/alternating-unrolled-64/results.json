@@ -49,7 +49,8 @@
       "scip": 0.0,
       "fscip": 0.0
     },
-    "lp_relaxation": 55715.0
+    "lp_relaxation": 55715.0,
+    "scip_presolve_solved": true
   },
   "ffx_validation": {
     "scope": "complete scalar control classes",
