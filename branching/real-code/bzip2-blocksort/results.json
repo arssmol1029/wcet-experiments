@@ -25,5 +25,15 @@
   "measured_elf_sha256": "44de3bfab402f34d9554f45eb2ce35afd4e1630b1473f4817bb3e1d424b82d7f",
   "ordinary_ff": "kernel.ff; tied to measured ELF and configured bounds",
   "fscip_environment": "macOS ARM64; FSCIP 4 workers, 900 s limit, two models concurrently; original constraint order",
-  "input_profile": "RAW_CAP=16384; reduced CFG with unreachable-block pruning"
+  "input_profile": "RAW_CAP=16384; reduced CFG with unreachable-block pruning",
+  "guarded_pathfinder": {
+    "pathfinder_seconds": 621.526357,
+    "pathfinder_status": "COMPLETED",
+    "pathfinder_facts": 4,
+    "otawa_seconds": 2.759559,
+    "variables": 959,
+    "constraints": 868,
+    "ffx_validation": "REJECTED: ARM prefix of BZ2_blockSort with nblock=1 executes the fallbackSort loop backedge forbidden by the generated FFX. Reachability from the saved task harness is not established. Three of four FFX facts produced no ILP row.",
+    "wcet": null
+  }
 }
