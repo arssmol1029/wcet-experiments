@@ -33,7 +33,7 @@
     "otawa_seconds": 2.759559,
     "variables": 959,
     "constraints": 868,
-    "ffx_validation": "REJECTED: ARM prefix of BZ2_blockSort with nblock=1 executes the fallbackSort loop backedge forbidden by the generated FFX. Reachability from the saved task harness is not established. Three of four FFX facts produced no ILP row.",
+    "ffx_validation": "REJECTED: full ARM and native C BZ2_blockSort calls with nblock=1 agree; ARM takes the forbidden fallbackSort loop backedge 127 times. Reachability from the saved task harness is not established. Three of four FFX facts produced no ILP row.",
     "wcet": null
   }
 }
