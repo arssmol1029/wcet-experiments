@@ -1,0 +1,47 @@
+{
+  "source": "Linux v6.6 ffc253263a1375a65fa6c9f62a893e9767fbebfa, dml/dcn32/display_mode_vba_util_32.c",
+  "entry": "dml32_TruncToValidBPP",
+  "environment": "OTAWA/Pathfinder Linux x86-64 emulated; solvers macOS ARM64",
+  "pathfinder_seconds": 184.785569,
+  "without_pathfinder": {
+    "model_objective": 17065.0,
+    "solver_seconds": {
+      "highs": 0.043579,
+      "scip": 0.08086,
+      "fscip": 0.038082
+    },
+    "solver_status": {
+      "highs": "OPTIMAL",
+      "scip": "OPTIMAL",
+      "fscip": "OPTIMAL"
+    },
+    "variables": 3949,
+    "constraints": 3265,
+    "otawa_seconds": 0.33784
+  },
+  "with_pathfinder": {
+    "model_objective": 17060.0,
+    "solver_seconds": {
+      "highs": 0.068376,
+      "scip": 0.081421,
+      "fscip": 0.126094
+    },
+    "solver_status": {
+      "highs": "OPTIMAL",
+      "scip": "OPTIMAL",
+      "fscip": "OPTIMAL"
+    },
+    "variables": 3949,
+    "constraints": 3686,
+    "otawa_seconds": 2.137768
+  },
+  "ffx_validation": {
+    "scope": "finite sample, not all valid inputs",
+    "checked_inputs": 64,
+    "native_arm_agreement": true,
+    "added_constraints": 421,
+    "constraints_touched": 388,
+    "violating_inputs": 0
+  },
+  "fscip_environment": "macOS ARM64; FSCIP 4 workers, 900 s limit, two models concurrently; original constraint order"
+}

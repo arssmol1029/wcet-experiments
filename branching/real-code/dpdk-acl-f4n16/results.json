@@ -1,0 +1,28 @@
+{
+  "source": "DPDK 24.11 commit 1b3bf1128d9bda5595861814792f74b8f57160c8; source slice and experimental F4/N16 harness",
+  "entry": "task_dpdk_acl",
+  "environment": "Linux x86-64; HiGHS 1.12.0, SCIP 9.2.2; trivial timing 5 units per ARM instruction",
+  "pathfinder_seconds": 3600.00817,
+  "pathfinder_status": "TIME_LIMIT at 3600 seconds; no complete FFX",
+  "without_pathfinder": {
+    "otawa_seconds": 0.723529,
+    "variables": 7774,
+    "constraints": 7156,
+    "wcet": null,
+    "solver_status": {
+      "fscip": "OPTIMAL"
+    },
+    "model_objective": 6049805376950.0,
+    "solver_seconds": {
+      "fscip": 0.185854
+    }
+  },
+  "with_pathfinder": {
+    "wcet": null
+  },
+  "ffx_validation": "No complete FFX; no semantic validation.",
+  "measured_elf_sha256": "557d18b9e56e36334626b632c36611d9ddf11f6625beab4641c2cface0e921c1",
+  "ordinary_ff": "kernel.ff; tied to measured ELF and configured bounds",
+  "fscip_environment": "macOS ARM64; FSCIP 4 workers, 900 s limit, two models concurrently; original constraint order",
+  "input_profile": "4 rule families, 16 rules"
+}

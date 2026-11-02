@@ -1,0 +1,36 @@
+{
+  "source": "libpcap 1.10.5 pcapint_filter with synthetic random32-96 filter cascade and experimental harness",
+  "entry": "task_libpcap_cascade",
+  "environment": "Linux x86-64; HiGHS 1.12.0, SCIP 9.2.2; trivial timing 5 units per ARM instruction",
+  "pathfinder_seconds": 0.822318,
+  "pathfinder_status": "COMPLETE: 1 automatic fact",
+  "without_pathfinder": {
+    "otawa_seconds": 23.941688,
+    "model_objective": 302740.0,
+    "solver_seconds": {
+      "highs": 0.568144,
+      "scip": 1.573385,
+      "fscip": 0.401786
+    },
+    "solver_status": {
+      "highs": "OPTIMAL",
+      "scip": "OPTIMAL",
+      "fscip": "OPTIMAL"
+    },
+    "variables": 38183,
+    "constraints": 35783
+  },
+  "with_pathfinder": {
+    "otawa_seconds": 23.787964,
+    "wcet": null,
+    "solver_status": {
+      "highs": "INFEASIBLE",
+      "scip": "INFEASIBLE"
+    }
+  },
+  "ffx_validation": "REJECTED: added x8111+x8120<=1 excludes genuine RET K paths; full model infeasible.",
+  "measured_elf_sha256": "7d70400ed8f8504229843f2b40c6e3a244ec68edbf137d8d7ddd326ce61c270b",
+  "ordinary_ff": "kernel.ff; tied to measured ELF and configured bounds",
+  "fscip_environment": "macOS ARM64; FSCIP 4 workers, 900 s limit, two models concurrently; original constraint order",
+  "input_profile": "random32-96 policy, virtual IPET"
+}

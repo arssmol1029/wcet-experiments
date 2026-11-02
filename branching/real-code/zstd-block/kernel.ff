@@ -1,0 +1,158 @@
+checksum "kernel.elf" 0x6f7057e7;
+// Public caller stores literal0 at incoming frame stack+4. Prologue192bytes reads sp196 into r5. Initial framed-header predicate is0 regardless stage; BNE at1b7c4 cannot execute.
+ignore control "ZSTD_compressContinue_internal" +0x40;
+// Fresh applied LDM enable!=ZSTD_ps_enable1; window update does not modify params. Branch1b864 to LDM window update is false.
+ignore control "ZSTD_compressContinue_internal" +0xe0;
+// r5 still frame0 at1b86c. BEQ1b874 always takes raw-block branch1bddc; whole frameChunk/splitting/checksum environment is outside this API.
+ignore seq "ZSTD_compressContinue_internal" +0xf0;
+// First window update establishes base=src−2 and iend=src+4096. r0=iend−base=4098. Actual cmp immediate2097152000; conditional popls is always a return, removing fallthrough index reduction. No library call is suppressed.
+ignore seq "ZSTD_overflowCorrectIfNeeded" +0x1c;
+// Task size4096>6, so source minimum-block early path cannot execute; r2 is unchanged size passed by internal body.
+ignore control "ZSTD_buildSeqStore" +0x14;
+// Fresh external raw store pos=size=0. Loadsctx2136/2144 compare pos to size. BCC18508 false; buildSeqStore has not mutated this separate store.
+ignore control "ZSTD_buildSeqStore" +0xe0;
+// Applied LDM!=1 atctx276; BEQ18514 to generator false, same source invariant as public continuation.
+ignore control "ZSTD_buildSeqStore" +0xec;
+// Fresh ctx external producer=NULL. Loadctx364 into r8 followed cmp0/BEQ1851c; branch always taken. Unknown external callback18558 is unreachable for the prepared context.
+ignore seq "ZSTD_buildSeqStore" +0xf4;
+// NoDict: dictLimit==lowLimit2 and dictMatchStateNULL yield r9=0. strategy8 is outside row strategies3..5; normal table index8, ELF table0xd8de8 word8=btultra0x7d34c. Actual BLX1874c resolves to that one target.
+multicall "ZSTD_buildSeqStore" +0x324 to "ZSTD_compressBlock_btultra";
+// r5 is the single-stream predicate. Literal table words1d534/538 give1X1673c/4X16790; conditionalMOV chooses one. Both valid source routes retained.
+multicall "ZSTD_compressLiterals" +0x150 to "HUF_compress1X_repeat", "HUF_compress4X_repeat";
+// Only buckets166..190 sorted, each symbol count>=165, so root bucket m<=floor4096/165=24. Each partition removes unique pivot and calls exactly one recursive side; total backcalls per root<=m−1<=23. Installed consumer bounds summed backcalls relative to summed nonrecursive roots; absolute288calls/task is a separate source bound.
+recurse "HUF_simpleQuickSort" 23;
+
+// At the one parser call, buildSeqStore has set symbolCosts and reset the SeqStore, and fresh noDict/minMatch4 remains. Original opt/matcher argument-passing words checked anew; callback table entry1 equals75098.
+multicall "ZSTD_compressBlock_opt2" +0x1e0 to "ZSTD_btGetAllMatches_noDict_4";
+// Same once-assigned stack callback slot92 and the second actual BLX load; source domain identical at the internal parser entry.
+multicall "ZSTD_compressBlock_opt2" +0x734 to "ZSTD_btGetAllMatches_noDict_4";
+// Fresh opt.litLengthSum0 persists until the first/only parser rescale; no previous block or updateStats preceded it.
+ignore control "ZSTD_rescaleFreqs" +0x24;
+// buildSeqStore points symbolCosts to fresh prevCBlock entropy with HUF_repeat_none; first HUF compression happens after parser, so repeat_valid2 false.
+ignore control "ZSTD_rescaleFreqs" +0x40;
+// ms.ldmSeqStoreNULL creates the parser-local zero RawSeqStore; size stays0 because reachable fast paths change only fields20/24.
+ignore seq "ZSTD_opt_getNextMatchAndUpdateSeqStore" +0xc;
+// The same local size0 implies its conditional popEQ always returns; no raw sequence computation is omitted from this domain.
+ignore seq "ZSTD_optLdm_processMatchCandidate" +0x10;
+// Only selected noDict4 matcher calls insert with fifth/sixth arguments4/0. UINT32(4−5)>3, so conditional hash5..8 jump cannot execute; hash4 remains.
+ignore control "ZSTD_insertBt1" +0x24;
+// extDict0 read at sp148, cmp0 and BEQ prefix always true. Dictionary-count paths are cold, same source property with actual new words checked.
+ignore seq "ZSTD_insertBt1" +0x238;
+// Fresh seqCollector.collectSequences0 loadedctx740; buildSeqStore and parser do not mutate collector. BEQ1aea8 always takes real entropy path, cold copyBlockSequences removed.
+ignore seq "ZSTD_compressBlock_internal" +0x4c;
+// Public raw continuation still has r5=frame0 and stores it tosp4 at1be0c; internal56byteframe reads it atsp60 beforeBNE1af48. Frame-RLE probe cannot execute.
+ignore control "ZSTD_compressBlock_internal" +0xec;
+// All reachable U32 division denominators are positive: nbSeq in guarded literal/sequence cost; total in normalization; positive ToDistribute or2*ToDistribute after early return; alphabet A=maxSymbol+1 in M2 modulo. No other kernel divider callers after prepared-state closure. SUBSdivisor−1 BCC is exclusively divisor0.
+ignore control "__udivsi3" +0x8;
+// Same positive U32 divisor domain for modulo; first BEQ div0 false. Real quotient/remainder helper remains in graph.
+ignore control "__aeabi_uidivmod" +0x4;
+// Both U64 numerator divisions have U32 positive total denominator: primary L>=2, M2 remaining total>0 after explicit zero branch. r3:r2 denominator !=0, so BNE7dfd4 always follows real __udivmoddi4 path.
+ignore seq "__aeabi_uldivmod" +0x8;
+// After divisor1/zero, numerator<=divisor and power2 early paths, numerator>divisor>0. Delta=clz(divisor)−clz(numerator)∈0..31. r3=31−Delta; conditional ADD executes onlyr3!=0 then scales3. ARM PC7dbbc plus12*r3 gives exactly these31 possibleCMP targets; zero-case falls throughNOP toCMP31.
+multibranch "__udivsi3" +0x34 to 0x7dbc8, 0x7dbd4, 0x7dbe0, 0x7dbec, 0x7dbf8, 0x7dc04, 0x7dc10, 0x7dc1c, 0x7dc28, 0x7dc34, 0x7dc40, 0x7dc4c, 0x7dc58, 0x7dc64, 0x7dc70, 0x7dc7c, 0x7dc88, 0x7dc94, 0x7dca0, 0x7dcac, 0x7dcb8, 0x7dcc4, 0x7dcd0, 0x7dcdc, 0x7dce8, 0x7dcf4, 0x7dd00, 0x7dd0c, 0x7dd18, 0x7dd24, 0x7dd30;
+// Actual conditional LDRpc switch guardedtype<=3 loads four literal words at1d8d4..e0. These cover basic/rle/compressed/repeat; no type algorithm is replaced and error fallthrough remains.
+multibranch "ZSTD_buildCTable" +0x1c to 0x1d9a4, 0x1d9d4, 0x1d900, 0x1d8e4;
+// Explicit task-relative totals on all shared-inline source loops.
+loop 0x72180 max 4096 total 4096 min 0;
+loop 0x724f4 max 3 total 3072 min 0;
+loop 0x72528 max 35 total 35840 min 0;
+loop 0x7262c max 64 total 65536 min 0;
+loop 0x7245c max 1025 total 2048 min 0;
+loop 0x72d94 max 128 total 4096 min 0;
+loop 0x7234c max 1025 total 2048 min 0;
+loop 0x72780 max 4096 total 4194304 min 0;
+loop 0x7292c max 35 total 146800640 min 0;
+loop 0x7299c max 64 total 268435456 min 0;
+loop 0x72a4c max 4096 total 4194304 min 0;
+loop 0x71ee4 max 256 total 256 min 0;
+loop 0x71afc max 36 total 36 min 0;
+loop 0x71b20 max 53 total 53 min 0;
+loop 0x71b5c max 32 total 32 min 0;
+loop 0x75420 max 32 total 131072 min 0;
+loop 0x7554c max 1024 total 134217728 min 0;
+loop 0x7523c max 3 total 12288 min 0;
+loop 0x75764 max 1024 total 12582912 min 0;
+loop 0x750e8 max 4096 total 4096 min 0;
+loop 0x71870 max 4096 total 4096 min 0;
+loop 0x71f3c max 32 total 4096 min 0;
+loop 0x71f8c max 128 total 4096 min 0;
+loop 0x73168 max 32 total 131072 min 0;
+loop 0x73494 max 1024 total 134217728 min 0;
+loop 0x7dae8 max 4096 min 0;
+loop 0x7db70 max 4096 total 1048576 min 0;
+loop 0x7db40 max 1024 total 65536 min 0;
+loop 0x7db20 max 1024 total 65536 min 0;
+loop 0x1ddb0 max 1024 total 1024 min 0;
+loop 0x1d490 max 4096 total 4096 min 0;
+loop 0x1a254 max 1024 total 1024 min 0;
+loop 0x146fc max 256 total 16384 min 0;
+loop 0x146dc max 255 total 16320 min 0;
+loop 0x146b0 max 4096 total 262144 min 0;
+loop 0x1459c max 256 total 16384 min 0;
+loop 0x145dc max 255 total 16320 min 0;
+loop 0x14578 max 4096 total 262144 min 0;
+loop 0x143b8 max 256 total 16384 min 0;
+loop 0x1d87c max 53 total 159 min 0;
+loop 0x1d7b8 max 53 total 159 min 0;
+loop 0x1d614 max 53 total 159 min 0;
+loop 0x13ac8 max 53 total 795 min 0;
+loop 0x13c9c max 256 total 3840 min 0;
+loop 0x13a58 max 512 total 7680 min 0;
+loop 0x1399c max 53 total 795 min 0;
+loop 0x13b78 max 53 total 795 min 0;
+loop 0x13c0c max 64 total 960 min 0;
+loop 0x139f4 max 53 total 795 min 0;
+loop 0x13a08 max 512 total 7680 min 0;
+loop 0x13a0c max 512 total 7680 min 0;
+loop 0x13f38 max 53 total 954 min 0;
+loop 0x14090 max 53 total 954 min 0;
+loop 0x141f8 max 53 total 954 min 0;
+loop 0x1429c max 53 total 954 min 0;
+loop 0x14184 max 53 total 954 min 0;
+loop 0x14254 max 27136 total 488448 min 0;
+loop 0x132a4 max 53 total 954 min 0;
+loop 0x1337c max 53 total 954 min 0;
+loop 0x133f8 max 53 total 954 min 0;
+loop 0x133b4 max 53 total 954 min 0;
+loop 0x132f8 max 10 total 180 min 0;
+loop 0x135d4 max 128 total 1536 min 0;
+loop 0x7e0e0 max 64 total 2304 min 0;
+loop 0x159a8 max 256 total 3072 min 0;
+loop 0x159e4 max 192 total 2304 min 0;
+loop 0x15a20 max 256 total 3072 min 0;
+loop 0x15a78 max 25 total 300 min 0;
+loop 0x15ad0 max 255 total 3060 min 0;
+loop 0x15b3c max 256 total 3072 min 0;
+loop 0x15b78 max 256 total 3072 min 0;
+loop 0x15c38 max 256 total 3072 min 0;
+loop 0x15c6c max 256 total 3072 min 0;
+loop 0x15cdc max 256 total 3072 min 0;
+loop 0x15d0c max 256 total 3072 min 0;
+loop 0x15d44 max 256 total 3072 min 0;
+loop 0x15d74 max 255 total 3060 min 0;
+loop 0x15d9c max 12 total 36720 min 0;
+loop 0x15df8 max 12 total 36720 min 0;
+loop 0x15e64 max 511 total 6132 min 0;
+loop 0x1608c max 256 total 1569792 min 0;
+loop 0x15efc max 256 total 3072 min 0;
+loop 0x15f3c max 12 total 144 min 0;
+loop 0x15f68 max 256 total 3072 min 0;
+loop 0x15f98 max 256 total 3072 min 0;
+loop 0x14924 max 8 total 3312 min 0;
+loop 0x148fc max 8 total 288 min 0;
+loop 0x14818 max 24 total 288 min 0;
+loop 0x14838 max 24 total 3312 min 0;
+loop 0x16550 max 256 total 256 min 0;
+loop 0x16574 max 256 total 256 min 0;
+loop 0x166c0 max 256 total 256 min 0;
+loop 0x15454 max 12 total 144 min 0;
+loop 0x15478 max 256 total 3072 min 0;
+loop 0x15650 max 128 total 1536 min 0;
+loop 0x16238 max 11 total 11 min 0;
+loop 0x162a4 max 256 total 2816 min 0;
+loop 0x161f8 max 256 total 256 min 0;
+loop 0x15120 max 4096 total 4096 min 0;
+loop 0x14f40 max 4096 total 4096 min 0;
+loop 0x14d40 max 4096 total 4096 min 0;
+loop 0x14a94 max 4096 total 4096 min 0;
+loop 0x14e30 max 3 total 12 min 0;

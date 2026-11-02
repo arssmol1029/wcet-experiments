@@ -1,0 +1,10 @@
+checksum "kernel.elf" 0x73151f53;
+
+// Function do_uncompress.constprop.0 (/tmp/otawa-real-kernels-20261017T151008Z/audit/secondary-candidates/wireshark-lz77/core.inc:15)
+loop "do_uncompress.constprop.0" + 0x38 66 ; // 0x1036c (/tmp/otawa-real-kernels-20261017T151008Z/audit/secondary-candidates/wireshark-lz77/core.inc:19)
+	loop "do_uncompress.constprop.0" + 0x44 2 ; // 0x10378 (/tmp/otawa-real-kernels-20261017T151008Z/audit/secondary-candidates/wireshark-lz77/core.inc:25)
+	loop "do_uncompress.constprop.0" + 0xd8 4096 ; // 0x1040c (/tmp/otawa-real-kernels-20261017T151008Z/audit/secondary-candidates/wireshark-lz77/core.inc:70)
+
+
+ignoreseq "do_uncompress.constprop.0" + 0x11c;
+noreturn "adapter_violation";

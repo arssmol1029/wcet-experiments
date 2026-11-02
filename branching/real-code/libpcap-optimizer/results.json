@@ -1,0 +1,29 @@
+{
+  "source": "libpcap 1.10.5 optimizer with experimental fixture and ARM harness",
+  "entry": "bench_kernel",
+  "environment": "Linux x86-64; HiGHS 1.12.0, SCIP 9.2.2; trivial timing 5 per ARM instruction",
+  "pathfinder_seconds": 35.322574,
+  "pathfinder_status": "SIGSEGV; exact cause unknown; no complete FFX",
+  "without_pathfinder": {
+    "otawa_seconds": 0.359872,
+    "model_objective": 350090625.0,
+    "solver_seconds": {
+      "highs": 0.354556,
+      "scip": 1.011681,
+      "fscip": 0.074677
+    },
+    "variables": 2062,
+    "constraints": 1724,
+    "solver_status": {
+      "fscip": "OPTIMAL"
+    }
+  },
+  "with_pathfinder": {
+    "wcet": null
+  },
+  "ffx_validation": "No complete FFX; not checked.",
+  "measured_elf_sha256": "1af6093e5906c7f5dd94657dac5f5c27e64872d7e9e62eb5371d536380481df1",
+  "ordinary_ff": "kernel.ff; tied to measured ELF and configured bounds",
+  "fscip_environment": "macOS ARM64; FSCIP 4 workers, 900 s limit, two models concurrently; original constraint order",
+  "input_profile": "32-block constructed BPF IR, one optimizer pass"
+}

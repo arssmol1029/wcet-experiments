@@ -1,0 +1,41 @@
+{
+  "source": "Linux v6.6 ffc253263a1375a65fa6c9f62a893e9767fbebfa, dml/dcn32/display_mode_vba_util_32.c",
+  "entry": "dml32_CalculatePrefetchSchedule",
+  "environment": "Linux x86-64; HiGHS 1.12.0, SCIP 9.2.2; trivial timing 5 units per ARM instruction",
+  "pathfinder_seconds": 476.760001,
+  "pathfinder_facts": 10038,
+  "without_pathfinder": {
+    "model_objective": 266860.0,
+    "solver_seconds": {
+      "highs": 1.006027,
+      "scip": 1.774955,
+      "fscip": 0.451482
+    },
+    "solver_status": {
+      "highs": "OPTIMAL",
+      "scip": "OPTIMAL",
+      "fscip": "OPTIMAL"
+    },
+    "variables": 39953,
+    "constraints": 32783,
+    "otawa_seconds": 1.012343
+  },
+  "with_pathfinder": {
+    "model_objective": 266695.0,
+    "solver_seconds": {
+      "highs": 14.548288,
+      "scip": 16.608828,
+      "fscip": 6.051834
+    },
+    "solver_status": {
+      "highs": "OPTIMAL",
+      "scip": "OPTIMAL",
+      "fscip": "OPTIMAL"
+    },
+    "variables": 39953,
+    "constraints": 47291,
+    "otawa_seconds": 569.635677
+  },
+  "ffx_validation": "UNPROVEN: exact solver witnesses; full FFX soundness against source domain not established.",
+  "fscip_environment": "macOS ARM64; FSCIP 4 workers, 900 s limit, two models concurrently; original constraint order"
+}

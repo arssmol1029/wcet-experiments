@@ -1,0 +1,88 @@
+checksum "pcre2-packet-match.elf" 0xe4984297;
+ignore seq "do_callout" +0x44;
+multicall "pcre2_match_8" +0x938 to "bounded_free";
+multicall "pcre2_match_8" +0xdfc to "bounded_malloc";
+multicall "pcre2_match_8" +0x32c to "bounded_free";
+multicall "pcre2_match_8" +0x33c to "bounded_malloc";
+multicall "pcre2_match_8" +0x894 to "bounded_free";
+multicall "match.constprop.0" +0x2a8 to "bounded_malloc";
+multicall "match.constprop.0" +0x2cc to "bounded_free";
+
+// Standard LoopReductor proof revision2. Same executable and API contract.
+loop "pcre2_match_8" +0x6bc max 1; // anchored: outer bumpalong: PCRE2_ANCHORED exits after first attempt
+loop "pcre2_match_8" +0xb60 max 2049; // subject: start-bitmap forward search over explicit subject interval
+loop "pcre2_match_8" +0xa64 max 2049; // subject: newline forward search over explicit subject interval
+loop "pcre2_match_8" +0x82c max 2049; // subject: firstline forward search over explicit subject interval
+loop "_pcre2_strlen_8" +0x14 max 0; // absent: called only when length==PCRE2_ZERO_TERMINATED; domain length0..2048
+loop "memset" +0x18 max 257; // runtime_copy: only first-frame ovector initialization, <=frame_size104
+loop "match.constprop.0" +0x80 max 4097 total 4097; // new_frame: NEW_FRAME match_call_count++ check; one anchored attempt
+loop "match.constprop.0" +0xe4 max 16783360 total 16783360; // dispatch: shared opcode dispatch; forward-code segments between frame events
+loop "match.constprop.0" +0xe8 max 16783360 total 16783360; // dispatch: shared opcode dispatch; forward-code segments between frame events
+loop "match.constprop.0" +0x6f4 max 2049; // subject: minimum repeated negated character: consumes one subject byte or exits
+loop "match.constprop.0" +0x768 max 4097 total 4097; // return: RETURN_SWITCH: absolute frame-creation/return budget4097 also covers all new reduced latches
+loop "match.constprop.0" +0x4c84 max 0; // absent: OP_DNRREF: no conditional/named recursion references in selected bytecode
+loop "match.constprop.0" +0x4d00 max 0; // absent: OP_DNCREF: no conditional/named capture references in selected bytecode
+loop "match.constprop.0" +0x3774 max 130; // frames: OP_CLOSE linked group-frame traversal; moves strictly towards predecessor
+loop "match.constprop.0" +0x5984 max 130; // frames: OP_ACCEPT linked group-frame traversal; moves strictly towards predecessor
+loop "match.constprop.0" +0x464 max 2049; // code: OP_SKIPZERO forward branch links, positive and inside compiled payload
+loop "match.constprop.0" +0x458c max 2049; // subject: greedy ANY repeat; forward subject pointer
+loop "match.constprop.0" +0x42e4 max 2049; // subject: greedy HSPACE repeat; forward subject pointer
+loop "match.constprop.0" +0x445c max 2049; // subject: greedy NOT_VSPACE repeat; forward subject pointer
+loop "match.constprop.0" +0x3278 max 2049; // subject: greedy VSPACE repeat; forward subject pointer
+loop "match.constprop.0" +0x4498 max 2049; // subject: greedy ANYNL repeat; forward subject pointer, at least one byte
+loop "match.constprop.0" +0x3188 max 2049; // subject: greedy NOT_HSPACE repeat; forward subject pointer
+loop "match.constprop.0" +0x4618 max 2049; // subject: greedy WHITESPACE repeat; forward subject pointer
+loop "match.constprop.0" +0x4358 max 2049; // subject: greedy NOT_WORDCHAR repeat; forward subject pointer
+loop "match.constprop.0" +0x30d8 max 2049; // subject: greedy WORDCHAR repeat; forward subject pointer
+loop "match.constprop.0" +0x43e4 max 2049; // subject: greedy DIGIT repeat; forward subject pointer
+loop "match.constprop.0" +0x3044 max 2049; // subject: greedy NOT_DIGIT repeat; forward subject pointer
+loop "match.constprop.0" +0x2fb0 max 2049; // subject: greedy NOT_WHITESPACE repeat; forward subject pointer
+loop "match.constprop.0" +0x2b84 max 2049; // subject: greedy repeated negated character; forward subject pointer
+loop "match.constprop.0" +0x2a3c max 0; // absent: backreference repetition; no REF/REFI/DNREF/DNREFI in selected bytecode
+loop "match.constprop.0" +0x4258 max 0; // absent: backreference retry; no REF/REFI/DNREF/DNREFI in selected bytecode
+loop "match.constprop.0" +0x110c max 0; // absent: duplicate named backreference lookup; no named references
+loop "match.constprop.0" +0x3ef8 max 2049; // subject: greedy bitmap CLASS repeat; consumes one subject byte or exits
+loop "match.constprop.0" +0x38fc max 2049; // subject: minimum bitmap CLASS repeat; consumes one subject byte or exits
+loop "match.constprop.0" +0x4b4 max 0; // absent: OP_ASSERT_SCS substring scan; no assertions in selected bytecode
+loop "match.constprop.0" +0x2308 max 0; // absent: OP_ASSERT_SCS named capture scan; no assertions in selected bytecode
+loop "match.constprop.0" +0x3414 max 2049; // code: KET branch_start follows positive links up to known branch_end
+loop "match.constprop.0" +0x3dcc max 2049; // code: ONCE predecessor code follows positive ALT links
+loop "match.constprop.0" +0x14e8 max 2049; // code: OP_ALT follows positive links to group end
+loop "match.constprop.0" +0xc1c max 2049; // subject: greedy case-insensitive literal repeat; consumes one byte or exits
+loop "match.constprop.0" +0xd18 max 2049; // subject: greedy literal repeat; consumes one byte or exits
+loop "match.constprop.0" +0x56ac max 2049; // subject: minimum literal repeat; consumes one byte or exits
+loop "match.constprop.0" +0xa58 max 2049; // subject: minimum case-insensitive literal repeat; consumes one byte or exits
+loop "match.constprop.0" +0x92c max 2049; // subject: greedy negated literal repeat; consumes one byte or exits
+loop "match.constprop.0" +0x2454 max 2049; // subject: minimum negated literal repeat; consumes one byte or exits
+loop "match.constprop.0" +0x19d8 max 2049; // code: OP_TRUE conditional: positive links to next branch/end (unselected opcode)
+loop "match.constprop.0" +0x4ad4 max 2049; // code: non-atomic lookbehind positive branch links (unselected opcode)
+loop "match.constprop.0" +0x1814 max 2049; // code: negative lookbehind positive branch links (unselected opcode)
+loop "match.constprop.0" +0x226c max 2049; // code: possessive group positive branch links (unselected opcode)
+loop "match.constprop.0" +0x4b24 max 2049; // code: BRAZERO next-group positive branch links
+loop "match.constprop.0" +0x4a60 max 2049; // code: ASSERT_SCS positive branch links (unselected opcode)
+loop "match.constprop.0" +0x46f0 max 2049; // subject: possessive ANY repeat; forward subject pointer
+loop "match.constprop.0" +0x4760 max 2049; // subject: possessive HSPACE repeat; forward subject pointer
+loop "match.constprop.0" +0x41d0 max 2049; // subject: possessive NOT_VSPACE repeat; forward subject pointer
+loop "match.constprop.0" +0x1f78 max 2049; // subject: possessive VSPACE repeat; forward subject pointer
+loop "match.constprop.0" +0x27b8 max 2049; // subject: possessive ANYNL repeat; at least one byte forward
+loop "match.constprop.0" +0x1ee0 max 2049; // subject: possessive NOT_HSPACE repeat; forward subject pointer
+loop "match.constprop.0" +0x4190 max 2049; // subject: possessive WHITESPACE repeat; forward subject pointer
+loop "match.constprop.0" +0x47c4 max 2049; // subject: possessive NOT_WORDCHAR repeat; forward subject pointer
+loop "match.constprop.0" +0x1e7c max 2049; // subject: possessive WORDCHAR repeat; forward subject pointer
+loop "match.constprop.0" +0x480c max 2049; // subject: possessive DIGIT repeat; forward subject pointer
+loop "match.constprop.0" +0x1f30 max 2049; // subject: possessive NOT_DIGIT repeat; forward subject pointer
+loop "match.constprop.0" +0x1560 max 2049; // subject: possessive NOT_WHITESPACE repeat; forward subject pointer
+loop "match.constprop.0" +0x2d08 max 2049; // code: BRAMINZERO follows positive links before RMATCH
+loop "match.constprop.0" +0x3620 max 0; // absent: OP_RECURSE active frame-chain search; no OP_RECURSE
+loop "match.constprop.0" +0x508 max 0; // absent: OP_ASSERT_SCS body scan; no assertions
+loop "match.constprop.0" +0x582c max 0; // absent: backreference retry; no reference opcode
+loop "match.constprop.0" +0x5a98 max 7; // captures: successful match unsets suffix; i starts at most 2*(2+1)=6
+loop "memchr" +0x14 max 2049; // runtime_subject: searchlength/end_subject-start_match<=subject length2048
+loop "memcpy" +0x18 max 257; // runtime_copy: frame/capture copies<=104; growth/copy-subject paths excluded by capacity/options proof
+loop "match_ref.constprop.0" +0x114 max 0; // absent: helper called only by absent reference opcodes
+loop "match_ref.constprop.0" +0x78 max 0; // absent: helper called only by absent reference opcodes
+loop "recurse_update_offsets" +0x4c max 0; // absent: helper called only by absent pattern recursion
+loop "recurse_update_offsets" +0xb4 max 0; // absent: helper called only by absent pattern recursion
+loop "_pcre2_strcmp_8" +0x8 max 0; // absent: called only by MARK/SKIP_ARG verb; these opcodes absent
+loop "memcmp" +0x24 max 0; // absent: only retained caller match_ref is unreachable; wide-char comparisons not compiled
+loop "pcre2_match_8" +0x548 max 1 total 1; // anchored: LoopReductor exposed outer public bumpalong/presearch header. ANCHORED/no-partial input attempts at most once, so at most one entry and no required repeat; bound1 includes conservative slack.

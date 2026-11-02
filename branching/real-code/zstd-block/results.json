@@ -1,0 +1,31 @@
+{
+  "source": "zstd f8745da6ff1ad1e7bab384bd1f9d742439278e99, unmodified library with experimental ARM bridge and input",
+  "entry": "task_zstd_block",
+  "environment": "Linux x86-64; HiGHS 1.12.0, SCIP 9.2.2; trivial timing 5 units per ARM instruction",
+  "pathfinder_seconds": 0.169706,
+  "pathfinder_status": "SIGABRT: CFG builder assertion; no complete FFX",
+  "without_pathfinder": {
+    "otawa_seconds": 65.430885,
+    "model_objective": 1970715988495.0,
+    "solver_seconds": {
+      "highs": 43.946767,
+      "scip": 1.523556,
+      "fscip": 0.392272
+    },
+    "solver_status": {
+      "highs": "OPTIMAL",
+      "scip": "OPTIMAL",
+      "fscip": "OPTIMAL"
+    },
+    "variables": 16311,
+    "constraints": 15197
+  },
+  "with_pathfinder": {
+    "wcet": null
+  },
+  "ffx_validation": "No complete FFX; no semantic validation.",
+  "measured_elf_sha256": "6227a6dcad3e53057b84f48aaac44b3b4b156259e5ee2a69da5c87b509044aee",
+  "ordinary_ff": "kernel.ff; tied to measured ELF and configured bounds",
+  "fscip_environment": "macOS ARM64; FSCIP 4 workers, 900 s limit, two models concurrently; original constraint order",
+  "input_profile": "4096-byte block, virtual IPET"
+}

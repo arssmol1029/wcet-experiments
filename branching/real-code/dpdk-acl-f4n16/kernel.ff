@@ -1,0 +1,80 @@
+checksum "kernel.elf" 0xf9a83edc;
+
+recurse "acl_merge_trie.constprop.0" 489; // 0001120c (../dpdk-acl-port/generated/acl-build-slice.inc:584)
+recurse "acl_gen_range_low.constprop.0" 2; // 00010ec4 (../dpdk-acl-port/generated/acl-build-slice.inc:803)
+recurse "acl_gen_range_high.constprop.0" 2; // 00010f78 (../dpdk-acl-port/generated/acl-build-slice.inc:828)
+recurse "acl_free_node.constprop.0" 7025; // 00011130 (../dpdk-acl-port/generated/acl-build-slice.inc:176)
+// Function task_dpdk_acl (harness.c:29)
+loop "task_dpdk_acl" + 0x1c 16 ; // 0x116ec (../dpdk-acl-port/generated/acl-build-slice.inc:955)
+	loop "task_dpdk_acl" + 0x18c 1 ; // 0x1185c (../dpdk-acl-port/generated/acl-build-slice.inc:1034)
+	loop "task_dpdk_acl" + 0x58 5 ; // 0x11728 (../dpdk-acl-port/generated/acl-build-slice.inc:963)
+		loop "task_dpdk_acl" + 0x2fc 2 ; // 0x119cc (../dpdk-acl-port/generated/acl-build-slice.inc:871)
+		loop "task_dpdk_acl" + 0x328 2 ; // 0x119f8 (../dpdk-acl-port/generated/acl-build-slice.inc:887)
+
+// Function acl_build_alloc.constprop.0 (../dpdk-acl-port/generated/acl-build-slice.inc:98)
+loop "acl_build_alloc.constprop.0" + 0x24 16 ; // 0x109b8 (../dpdk-acl-port/generated/acl-build-slice.inc:104)
+
+// Function acl_merge_trie.constprop.0 (../dpdk-acl-port/generated/acl-build-slice.inc:584)
+loop "acl_merge_trie.constprop.0" + 0x3e8 1 ; // 0x115f4 (../dpdk-acl-port/generated/acl-build-slice.inc:516)
+loop "acl_merge_trie.constprop.0" + 0x450 1 ; // 0x1165c (../dpdk-acl-port/generated/acl-build-slice.inc:551)
+loop "acl_merge_trie.constprop.0" + 0x2d8 32 ; // 0x114e4 (../dpdk-acl-port/generated/acl-build-slice.inc:722)
+	loop "acl_merge_trie.constprop.0" + 0x304 8 ; // 0x11510 (../dpdk-acl-port/generated/acl-build-slice.inc:232)
+loop "acl_merge_trie.constprop.0" + 0xbc 32 ; // 0x112c8 (../dpdk-acl-port/generated/acl-build-slice.inc:638)
+	loop "acl_merge_trie.constprop.0" + 0x108 32 ; // 0x11314 (../dpdk-acl-port/generated/acl-build-slice.inc:649)
+		loop "acl_merge_trie.constprop.0" + 0x1e4 8 ; // 0x113f0 (../dpdk-acl-port/generated/acl-build-slice.inc:232)
+
+// Function acl_add_ptr_range.constprop.0.isra.0 (../dpdk-acl-port/generated/acl-build-slice.inc:301)
+loop "acl_add_ptr_range.constprop.0.isra.0" + 0x2c 256 ; // 0x10de4 (../dpdk-acl-port/generated/acl-build-slice.inc:316)
+
+// Function acl_gen_mask_trie.constprop.0 (../dpdk-acl-port/generated/acl-build-slice.inc:911)
+loop "acl_gen_mask_trie.constprop.0" + 0x54 4 ; // 0x11088 (../dpdk-acl-port/generated/acl-build-slice.inc:926)
+	loop "acl_gen_mask_trie.constprop.0" + 0x8c 256 ; // 0x110c0 (../dpdk-acl-port/generated/acl-build-slice.inc:338)
+
+// Function acl_gen_range_mdl.constprop.0 (../dpdk-acl-port/generated/acl-build-slice.inc:792)
+loop "acl_gen_range_mdl.constprop.0" + 0x50 2 ; // 0x10e7c (../dpdk-acl-port/generated/acl-build-slice.inc:784)
+
+// Function memset (../dpdk-acl-port/portable_runtime.c:8)
+loop "memset" + 0x18 1152 ; // 0x11c70 (../dpdk-acl-port/portable_runtime.c:8)
+
+// Function acl_dup_node.constprop.0 (../dpdk-acl-port/generated/acl-build-slice.inc:383)
+loop "acl_dup_node.constprop.0" + 0x44 8 ; // 0x10cb0 (../dpdk-acl-port/generated/acl-build-slice.inc:217)
+loop "acl_dup_node.constprop.0" + 0xb0 32 ; // 0x10d1c (../dpdk-acl-port/generated/acl-build-slice.inc:400)
+	loop "acl_dup_node.constprop.0" + 0x104 8 ; // 0x10d70 (../dpdk-acl-port/generated/acl-build-slice.inc:217)
+
+// Function acl_intersect_type (../dpdk-acl-port/generated/acl-build-slice.inc:355)
+loop "acl_intersect_type" + 0x20 8 ; // 0x10798 (../dpdk-acl-port/generated/acl-build-slice.inc:366)
+
+// Function acl_free_node.constprop.0 (../dpdk-acl-port/generated/acl-build-slice.inc:176)
+loop "acl_free_node.constprop.0" + 0x44 32 ; // 0x11174 (../dpdk-acl-port/generated/acl-build-slice.inc:438)
+
+// Function acl_add_ptr.constprop.0 (../dpdk-acl-port/generated/acl-build-slice.inc:242)
+loop "acl_add_ptr.constprop.0" + 0x94 32 ; // 0x10b4c (../dpdk-acl-port/generated/acl-build-slice.inc:282)
+loop "acl_add_ptr.constprop.0" + 0xbc 8 ; // 0x10b74 (../dpdk-acl-port/generated/acl-build-slice.inc:217)
+loop "acl_add_ptr.constprop.0" + 0xd4 8 ; // 0x10b8c (../dpdk-acl-port/generated/acl-build-slice.inc:217)
+loop "acl_add_ptr.constprop.0" + 0x124 8 ; // 0x10bdc (../dpdk-acl-port/generated/acl-build-slice.inc:217)
+loop "acl_add_ptr.constprop.0" + 0x144 8 ; // 0x10bfc (../dpdk-acl-port/generated/acl-build-slice.inc:217)
+loop "acl_add_ptr.constprop.0" + 0x24 32 ; // 0x10adc (../dpdk-acl-port/generated/acl-build-slice.inc:254)
+
+// Function acl_compact_node_ptrs (../dpdk-acl-port/generated/acl-build-slice.inc:478)
+loop "acl_compact_node_ptrs" + 0x34 32 ; // 0x10824 (../dpdk-acl-port/generated/acl-build-slice.inc:478)
+loop "acl_compact_node_ptrs" + 0x74 32 ; // 0x10864 (../dpdk-acl-port/generated/acl-build-slice.inc:485)
+	loop "acl_compact_node_ptrs" + 0x98 8 ; // 0x10888 (../dpdk-acl-port/generated/acl-build-slice.inc:217)
+	loop "acl_compact_node_ptrs" + 0x104 32 ; // 0x108f4 (../dpdk-acl-port/generated/acl-build-slice.inc:499)
+
+// Function memcpy (../dpdk-acl-port/portable_runtime.c:15)
+loop "memcpy" + 0x18 1152 ; // 0x11c98 (../dpdk-acl-port/portable_runtime.c:15)
+
+// Function acl_build_free.constprop.0 (../dpdk-acl-port/generated/acl-build-slice.inc:128)
+loop "acl_build_free.constprop.0" + 0x8 16 ; // 0x10914 (../dpdk-acl-port/generated/acl-build-slice.inc:129)
+loop "acl_build_free.constprop.0" + 0x34 16 ; // 0x10940 (../dpdk-acl-port/generated/acl-build-slice.inc:136)
+
+
+
+// Applies only to task_dpdk_acl after genuine stock pool reservation.
+// Never use these facts with main/setup as the analysis entry.
+// pool.block!=NULL and total fresh payload <=48192 < reserved8MiB.
+ignorecontrol "tb_alloc" + 0x28;
+ignoreseq "tb_alloc" + 0x34;
+// The configured field types are exactly MASK0/RANGE1/BITMASK2.
+// If the preceding type1/type2 branches fell through, this type0 branch is true.
+ignoreseq "task_dpdk_acl" + 0x8c;

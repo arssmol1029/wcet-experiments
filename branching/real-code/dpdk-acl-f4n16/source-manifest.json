@@ -1,0 +1,47 @@
+{
+  "repository": "https://github.com/DPDK/dpdk",
+  "tag": "v24.11",
+  "commit": "1b3bf1128d9bda5595861814792f74b8f57160c8",
+  "files": [
+    {
+      "path": "lib/acl/acl.h",
+      "sha256": "df49519b15cd60577180b40c0f7487e2058d32560452c97fef0cab576af7238e",
+      "url": "https://raw.githubusercontent.com/DPDK/dpdk/1b3bf1128d9bda5595861814792f74b8f57160c8/lib/acl/acl.h"
+    },
+    {
+      "path": "lib/acl/acl_bld.c",
+      "sha256": "4b70bf6e9bf9276ca578a02ecff879e2453620c7ff619477f55839aa60598201",
+      "url": "https://raw.githubusercontent.com/DPDK/dpdk/1b3bf1128d9bda5595861814792f74b8f57160c8/lib/acl/acl_bld.c"
+    },
+    {
+      "path": "lib/acl/acl_gen.c",
+      "sha256": "e1bcf882ba1bcabb52fa3b6c35559681a1a6ca78287468d6914942db462635d4",
+      "url": "https://raw.githubusercontent.com/DPDK/dpdk/1b3bf1128d9bda5595861814792f74b8f57160c8/lib/acl/acl_gen.c"
+    },
+    {
+      "path": "lib/acl/acl_log.h",
+      "sha256": "d8683e07eec3b2bb344d516d2d7de32ed7b075a6b259d93cd5906b23980a3da5",
+      "url": "https://raw.githubusercontent.com/DPDK/dpdk/1b3bf1128d9bda5595861814792f74b8f57160c8/lib/acl/acl_log.h"
+    },
+    {
+      "path": "lib/acl/rte_acl.h",
+      "sha256": "189a3ec881aaebeffb70a60ce62a2aceaa531e8e30e31b3370a44083e5efd061",
+      "url": "https://raw.githubusercontent.com/DPDK/dpdk/1b3bf1128d9bda5595861814792f74b8f57160c8/lib/acl/rte_acl.h"
+    },
+    {
+      "path": "lib/acl/rte_acl_osdep.h",
+      "sha256": "14ca531feb95c57a2913bde662d9774463bba1c7aa88d1daec72ecbd172ee060",
+      "url": "https://raw.githubusercontent.com/DPDK/dpdk/1b3bf1128d9bda5595861814792f74b8f57160c8/lib/acl/rte_acl_osdep.h"
+    },
+    {
+      "path": "lib/acl/tb_mem.c",
+      "sha256": "91cd171483a72f7f3c9a81b997149252adecdb8355548c39dadead1961506412",
+      "url": "https://raw.githubusercontent.com/DPDK/dpdk/1b3bf1128d9bda5595861814792f74b8f57160c8/lib/acl/tb_mem.c"
+    },
+    {
+      "path": "lib/acl/tb_mem.h",
+      "sha256": "d85e96b4d8c75bd7107383a94d1dc21e8620b7956c5d54408441a271729342b7",
+      "url": "https://raw.githubusercontent.com/DPDK/dpdk/1b3bf1128d9bda5595861814792f74b8f57160c8/lib/acl/tb_mem.h"
+    }
+  ]
+}

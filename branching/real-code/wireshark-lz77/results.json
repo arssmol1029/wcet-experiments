@@ -1,0 +1,44 @@
+{
+  "source": "Wireshark v4.6.5 do_uncompress; exact source slice with bounded experimental adapters, preset3",
+  "entry": "benchmark_entry",
+  "environment": "Linux x86-64; HiGHS 1.12.0, SCIP 9.2.2; trivial timing 5 units per ARM instruction",
+  "pathfinder_seconds": 29.446303,
+  "pathfinder_status": "COMPLETE: 297 automatic facts",
+  "without_pathfinder": {
+    "otawa_seconds": 0.069994,
+    "model_objective": 48137240.0,
+    "solver_seconds": {
+      "highs": 0.065003,
+      "scip": 0.617605,
+      "fscip": 0.027746
+    },
+    "solver_status": {
+      "highs": "OPTIMAL",
+      "scip": "OPTIMAL",
+      "fscip": "OPTIMAL"
+    },
+    "variables": 429,
+    "constraints": 383
+  },
+  "with_pathfinder": {
+    "otawa_seconds": 0.319868,
+    "model_objective": 48137195.0,
+    "solver_seconds": {
+      "highs": 0.115024,
+      "scip": 0.617737,
+      "fscip": 0.040808
+    },
+    "solver_status": {
+      "highs": "OPTIMAL",
+      "scip": "OPTIMAL",
+      "fscip": "OPTIMAL"
+    },
+    "variables": 429,
+    "constraints": 680
+  },
+  "ffx_validation": "UNPROVEN: feasible solver vectors validated; source soundness of full FFX not established.",
+  "measured_elf_sha256": "dd6c27939f35ace31c4969c8b8e53749d5bf3729e570f38e25e17f183bffc77a",
+  "ordinary_ff": "kernel.ff; tied to measured ELF and configured bounds",
+  "fscip_environment": "macOS ARM64; FSCIP 4 workers, 900 s limit, two models concurrently; original constraint order",
+  "input_profile": "preset 3; bounded computational port"
+}

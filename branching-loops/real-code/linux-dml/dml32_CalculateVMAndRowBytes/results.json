@@ -1,0 +1,41 @@
+{
+  "source": "Linux v6.6 ffc253263a1375a65fa6c9f62a893e9767fbebfa, dml/dcn32/display_mode_vba_util_32.c",
+  "entry": "dml32_CalculateVMAndRowBytes",
+  "environment": "Linux x86-64; HiGHS 1.12.0, SCIP 9.2.2; trivial timing 5 units per ARM instruction",
+  "pathfinder_seconds": 48.736903,
+  "pathfinder_facts": 493,
+  "without_pathfinder": {
+    "model_objective": 79610.0,
+    "solver_seconds": {
+      "highs": 1.006921,
+      "scip": 1.220791,
+      "fscip": 0.242481
+    },
+    "solver_status": {
+      "highs": "OPTIMAL",
+      "scip": "OPTIMAL",
+      "fscip": "OPTIMAL"
+    },
+    "variables": 21178,
+    "constraints": 17479,
+    "otawa_seconds": 1.009325
+  },
+  "with_pathfinder": {
+    "model_objective": 79550.0,
+    "solver_seconds": {
+      "highs": 1.005516,
+      "scip": 1.322869,
+      "fscip": 0.294647
+    },
+    "solver_status": {
+      "highs": "OPTIMAL",
+      "scip": "OPTIMAL",
+      "fscip": "OPTIMAL"
+    },
+    "variables": 21178,
+    "constraints": 18062,
+    "otawa_seconds": 4.149314
+  },
+  "ffx_validation": "UNPROVEN: solver witnesses exact; complete FFX soundness against program input domain not established.",
+  "fscip_environment": "macOS ARM64; FSCIP 4 workers, 900 s limit, two models concurrently; original constraint order"
+}

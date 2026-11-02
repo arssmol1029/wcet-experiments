@@ -1,0 +1,74 @@
+checksum "kernel.elf" 0xd329a31e;
+
+recurse "find_levels_r" 64 ; // 000103f8 (libpcap-libpcap-1.10.5/optimize.c:381)
+// Function memset (portable_runtime.c:8)
+loop "memset" + 0x18 3072 ; // 0x122e4 (portable_runtime.c:8)
+
+// Function find_dom (libpcap-libpcap-1.10.5/optimize.c:431)
+loop "find_dom" + 0x68 32 ; // 0x104e8 (libpcap-libpcap-1.10.5/optimize.c:444)
+	loop "find_dom" + 0x74 32 ; // 0x104f4 (libpcap-libpcap-1.10.5/optimize.c:445)
+		loop "find_dom" + 0xa8 2 ; // 0x10528 (libpcap-libpcap-1.10.5/optimize.c:448)
+		loop "find_dom" + 0xcc 2 ; // 0x1054c (libpcap-libpcap-1.10.5/optimize.c:449)
+loop "find_dom" + 0x3c 2 ; // 0x104bc (libpcap-libpcap-1.10.5/optimize.c:439)
+loop "find_dom" + 0x18 64 ; // 0x10498 (libpcap-libpcap-1.10.5/optimize.c:432)
+
+// Function find_closure (libpcap-libpcap-1.10.5/optimize.c:513)
+loop "find_closure" + 0x44 32 ; // 0x1084c (libpcap-libpcap-1.10.5/optimize.c:517)
+	loop "find_closure" + 0x50 32 ; // 0x10858 (libpcap-libpcap-1.10.5/optimize.c:518)
+		loop "find_closure" + 0x84 2 ; // 0x1088c (libpcap-libpcap-1.10.5/optimize.c:521)
+		loop "find_closure" + 0xa8 2 ; // 0x108b0 (libpcap-libpcap-1.10.5/optimize.c:522)
+
+// Function find_ud.isra.0 (libpcap-libpcap-1.10.5/optimize.c:683)
+loop "find_ud.isra.0" + 0x38 32 ; // 0x10b38 (libpcap-libpcap-1.10.5/optimize.c:694)
+	loop "find_ud.isra.0" + 0x4c 32 ; // 0x10b4c (libpcap-libpcap-1.10.5/optimize.c:628)
+		loop "find_ud.isra.0" + 0x98 3 ; // 0x10b98 (libpcap-libpcap-1.10.5/optimize.c:629)
+loop "find_ud.isra.0" + 0x18c 32 ; // 0x10c8c (libpcap-libpcap-1.10.5/optimize.c:700)
+	loop "find_ud.isra.0" + 0x198 32 ; // 0x10c98 (libpcap-libpcap-1.10.5/optimize.c:701)
+
+// Function find_edom (libpcap-libpcap-1.10.5/optimize.c:480)
+loop "find_edom" + 0x74 32 ; // 0x10954 (libpcap-libpcap-1.10.5/optimize.c:489)
+	loop "find_edom" + 0x80 32 ; // 0x10960 (libpcap-libpcap-1.10.5/optimize.c:490)
+loop "find_edom" + 0x28 192 ; // 0x10908 (libpcap-libpcap-1.10.5/optimize.c:482)
+
+// Function opt_blks (libpcap-libpcap-1.10.5/optimize.c:2093)
+loop "opt_blks" + 0x7c 32 ; // 0x1109c (libpcap-libpcap-1.10.5/optimize.c:2102)
+	loop "opt_blks" + 0x98 32 ; // 0x110b8 (libpcap-libpcap-1.10.5/optimize.c:1501)
+		loop "opt_blks" + 0xd8 60 ; // 0x110f8 (libpcap-libpcap-1.10.5/optimize.c:1525)
+			loop "opt_blks" + 0xe4 18 ; // 0x11104 (libpcap-libpcap-1.10.5/optimize.c:1526)
+		loop "opt_blks" + 0x6b0 18 ; // 0x116d0 (libpcap-libpcap-1.10.5/optimize.c:1466)
+		loop "opt_blks" + 0x670 3 ; // 0x11690 (libpcap-libpcap-1.10.5/optimize.c:1462)
+		loop "opt_blks" + 0x270 3 ; // 0x11290 (libpcap-libpcap-1.10.5/optimize.c:1532)
+			loop "opt_blks" + 0x284 3 ; // 0x112a4 (libpcap-libpcap-1.10.5/optimize.c:875)
+			loop "opt_blks" + 0x2ac 3 ; // 0x112cc (libpcap-libpcap-1.10.5/optimize.c:875)
+			loop "opt_blks" + 0x8e4 3 ; // 0x11904 (libpcap-libpcap-1.10.5/optimize.c:875)
+			loop "opt_blks" + 0x914 3 ; // 0x11934 (libpcap-libpcap-1.10.5/optimize.c:875)
+			loop "opt_blks" + 0xc84 3 ; // 0x11ca4 (libpcap-libpcap-1.10.5/optimize.c:875)
+		loop "opt_blks" + 0x170 3 ; // 0x11190 (libpcap-libpcap-1.10.5/optimize.c:1191)
+
+// Function propedom (libpcap-libpcap-1.10.5/optimize.c:457)
+loop "propedom" + 0x3c 3 ; // 0x105b8 (libpcap-libpcap-1.10.5/optimize.c:459)
+loop "propedom" + 0x5c 3 ; // 0x105d8 (libpcap-libpcap-1.10.5/optimize.c:460)
+
+// Function find_inedges (libpcap-libpcap-1.10.5/optimize.c:2155)
+loop "find_inedges" + 0x50 32 ; // 0x107bc (libpcap-libpcap-1.10.5/optimize.c:2163)
+	loop "find_inedges" + 0x5c 32 ; // 0x107c8 (libpcap-libpcap-1.10.5/optimize.c:2164)
+loop "find_inedges" + 0x24 32 ; // 0x10790 (libpcap-libpcap-1.10.5/optimize.c:2156)
+
+// Function F (libpcap-libpcap-1.10.5/optimize.c:726)
+loop "F" + 0x50 384 ; // 0x106f4 (libpcap-libpcap-1.10.5/optimize.c:735)
+
+// Function memcpy (portable_runtime.c:15)
+loop "memcpy" + 0x18 72 ; // 0x1230c (portable_runtime.c:15)
+
+// Function __aeabi_uidivmod (portable_runtime.c:20)
+loop "__aeabi_uidivmod" + 0x20 32 ; // 0x12340 (portable_runtime.c:25)
+
+// Function __aeabi_uidiv (portable_runtime.c:22)
+loop "__aeabi_uidiv" + 0x20 32 ; // 0x123a4 (portable_runtime.c:25)
+
+
+
+// Proven invariant: every task call passes do_stmts=1 unchanged.
+ignoreseq "opt_blks" + 0x728;
+noreturn "abort";
+noreturn "opt_error";

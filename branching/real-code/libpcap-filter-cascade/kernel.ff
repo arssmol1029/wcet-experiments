@@ -1,0 +1,8 @@
+checksum "kernel.elf" 0x12cfc3f8;
+// Source domain: immutable positive one-bit four-instruction programs; exact ELF table words checked.
+ignoreseq 0x10cd8; // every API program points at initialized backing slot1, never NULL
+ignoreseq 0x105a0; // allowed opcode set 6,32,69 is within unsigned range<=177
+multibranch 0x105a0 to 0x108d0, 0x10944, 0x10b54;
+ignorecontrol 0x1094c; // offset<=84<=128; no out-of-buffer branch
+ignorecontrol 0x10958; // buflen-offset>=44>=4; full word available
+loop 0x10594 max 2; // exactly3 dispatch,2 returns to this header in each valid API call

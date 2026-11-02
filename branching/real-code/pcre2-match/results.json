@@ -1,0 +1,31 @@
+{
+  "source": "PCRE2 10.47, commit f454e231fe5006dd7ff8f4693fd2b8eb94333429; upstream matcher with experimental Nmap-pattern harness",
+  "entry": "pcre2_packet_match_kernel",
+  "environment": "Linux x86-64; HiGHS 1.12.0, SCIP 9.2.2; trivial timing 5 units per ARM instruction",
+  "pathfinder_seconds": 16.361436,
+  "pathfinder_status": "SIGSEGV; cause of memory fault not established",
+  "without_pathfinder": {
+    "otawa_seconds": 9.123319,
+    "model_objective": 31069249168885.0,
+    "solver_seconds": {
+      "highs": 0.416235,
+      "scip": 0.717376,
+      "fscip": 0.129227
+    },
+    "solver_status": {
+      "highs": "OPTIMAL",
+      "scip": "OPTIMAL",
+      "fscip": "OPTIMAL"
+    },
+    "variables": 5419,
+    "constraints": 4226
+  },
+  "with_pathfinder": {
+    "wcet": null
+  },
+  "ffx_validation": "No complete FFX; no semantic validation.",
+  "measured_elf_sha256": "643c194033b5cfe21c7b55eab5af7be3df64d0d4bd82161ed482307f54b051f5",
+  "ordinary_ff": "kernel.ff; tied to measured ELF and configured bounds",
+  "fscip_environment": "macOS ARM64; FSCIP 4 workers, 900 s limit, two models concurrently; original constraint order",
+  "input_profile": "PCRE2-8, prepared Nmap patterns, reduced CFG"
+}

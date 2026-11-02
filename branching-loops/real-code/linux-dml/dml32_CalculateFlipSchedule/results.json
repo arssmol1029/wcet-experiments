@@ -1,0 +1,41 @@
+{
+  "source": "Linux v6.6 ffc253263a1375a65fa6c9f62a893e9767fbebfa, dml/dcn32/display_mode_vba_util_32.c",
+  "entry": "dml32_CalculateFlipSchedule",
+  "environment": "Linux x86-64; HiGHS 1.12.0, SCIP 9.2.2; trivial timing 5 units per ARM instruction",
+  "pathfinder_seconds": 37.281101,
+  "pathfinder_facts": 201,
+  "without_pathfinder": {
+    "model_objective": 50770.0,
+    "solver_seconds": {
+      "highs": 0.355483,
+      "scip": 1.011802,
+      "fscip": 0.122644
+    },
+    "solver_status": {
+      "highs": "OPTIMAL",
+      "scip": "OPTIMAL",
+      "fscip": "OPTIMAL"
+    },
+    "variables": 10070,
+    "constraints": 8256,
+    "otawa_seconds": 0.361091
+  },
+  "with_pathfinder": {
+    "model_objective": 50760.0,
+    "solver_seconds": {
+      "highs": 0.355158,
+      "scip": 1.071687,
+      "fscip": 0.129629
+    },
+    "solver_status": {
+      "highs": "OPTIMAL",
+      "scip": "OPTIMAL",
+      "fscip": "OPTIMAL"
+    },
+    "variables": 10070,
+    "constraints": 8783,
+    "otawa_seconds": 1.076644
+  },
+  "ffx_validation": "UNPROVEN: solver witnesses exact; complete FFX soundness against program input domain not established.",
+  "fscip_environment": "macOS ARM64; FSCIP 4 workers, 900 s limit, two models concurrently; original constraint order"
+}

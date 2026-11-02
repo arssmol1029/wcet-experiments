@@ -1,0 +1,29 @@
+{
+  "source": "bzip2 1.0.8 BZ2_blockSort with experimental ARM harness; unreachable CFG pruning enabled",
+  "entry": "task_bzip2_blocksort",
+  "environment": "Linux x86-64; HiGHS 1.12.0, SCIP 9.2.2; trivial timing 5 per ARM instruction",
+  "pathfinder_seconds": 146.407937,
+  "pathfinder_status": "SIGABRT: empty-state assertion; no complete FFX",
+  "without_pathfinder": {
+    "otawa_seconds": 1.149884,
+    "model_objective": 7569949385910.0,
+    "solver_seconds": {
+      "highs": 0.114466,
+      "scip": 1.02291,
+      "fscip": 0.03731
+    },
+    "variables": 959,
+    "constraints": 867,
+    "solver_status": {
+      "fscip": "OPTIMAL"
+    }
+  },
+  "with_pathfinder": {
+    "wcet": null
+  },
+  "ffx_validation": "No complete FFX; not checked.",
+  "measured_elf_sha256": "44de3bfab402f34d9554f45eb2ce35afd4e1630b1473f4817bb3e1d424b82d7f",
+  "ordinary_ff": "kernel.ff; tied to measured ELF and configured bounds",
+  "fscip_environment": "macOS ARM64; FSCIP 4 workers, 900 s limit, two models concurrently; original constraint order",
+  "input_profile": "RAW_CAP=16384; reduced CFG with unreachable-block pruning"
+}
