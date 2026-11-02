@@ -32,6 +32,7 @@
     "status": "COMPLETE with iterator fix",
     "facts": 43,
     "ffx_validation": "NOT ESTABLISHED: full FFX export after a context-length guard contains an impossible ILP row caused by signed integer overflow; no valid WCET.",
-    "wcet": null
+    "wcet": null,
+    "otawa_context_patch": "context-guard.patch"
   }
 }

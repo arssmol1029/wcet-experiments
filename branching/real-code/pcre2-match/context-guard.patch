@@ -1,0 +1,5 @@
+--- a/ipet_FlowFactLoader.cpp
++++ b/ipet_FlowFactLoader.cpp
+@@ -93 +93 @@
+-		bool isCompa = true;
++		bool isCompa = current.fst.count() <= path.count();
