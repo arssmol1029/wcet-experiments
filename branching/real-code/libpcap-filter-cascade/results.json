@@ -33,5 +33,5 @@
   "ordinary_ff": "kernel.ff; tied to measured ELF and configured bounds",
   "fscip_environment": "macOS ARM64; FSCIP 4 workers, 900 s limit, two models concurrently; original constraint order",
   "input_profile": "random32-96 policy, virtual IPET",
-  "pathfinder_diagnosis": "After an ordinary FF removes one branch, the original Pathfinder labels the retained taken edge with the opposite predicate. A patched run continues the first previously rejected path; complete patched FFX validation is pending."
+  "pathfinder_diagnosis": "After ordinary FF removes one branch, the original Pathfinder labels the retained taken edge with the opposite predicate. A patched run continues the first previously rejected path, but timed out after 3600 seconds before producing a complete FFX."
 }
