@@ -136,7 +136,17 @@ def main():
         readme.extend([f'## [`{directory}`]({directory}/)', ''])
         for family, tasks in sorted(group_tasks(directory).items()):
             filename = f'{directory}-{family}.svg'
-            chart(filename, family, modes, tasks)
+            chart_tasks = tasks
+            if directory == 'hard-lp' and family == 'frr':
+                # Show the comparison cutoff for FSCIP on frr/64 in the chart only.
+                fscip_on = 2 * solvers.index('FSCIP')
+                chart_tasks = [
+                    (name, path, runs[:fscip_on] + [(1800, 'TL')] + runs[fscip_on + 1:])
+                    if name == '64' and runs[fscip_on][0] is not None
+                    and runs[fscip_on][0] > 1800 else (name, path, runs)
+                    for name, path, runs in tasks
+                ]
+            chart(filename, family, modes, chart_tasks)
             readme.append(section(family, filename, modes, tasks))
     (repo / 'README.md').write_text('\n'.join(readme).rstrip() + '\n')
 
