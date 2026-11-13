@@ -15,7 +15,7 @@
 <rect x="100.29113247863249" y="229.6097" width="7.735042735042735" height="114.3903" fill="#4a9c7d"><title>k16-all, SCIP, с Pathfinder, 1,170954 с (статус не записан)</title></rect>
 <rect x="111.42959401709403" y="245.1057" width="7.735042735042735" height="98.8943" fill="#7750a1"><title>k16-all, FSCIP, без Pathfinder, 1,012329 с (статус не записан)</title></rect>
 <rect x="120.13151709401711" y="214.8207" width="7.735042735042735" height="129.1793" fill="#a17dc1"><title>k16-all, FSCIP, с Pathfinder, 1,322341 с (статус не записан)</title></rect>
-<text x="99.8076923076923" y="369" text-anchor="middle" font-weight="bold">k16-all</text>
+<text x="99.8076923076923" y="359" text-anchor="end" font-size="12" transform="rotate(-32 99.8076923076923 359)">k16-all</text>
 <rect x="141.3642094017094" y="322.9016" width="7.735042735042735" height="21.0984" fill="#235a9e"><title>k16-both-kicks, HiGHS, без Pathfinder, 0,215973 с (статус не записан)</title></rect>
 <rect x="150.06613247863245" y="288.5101" width="7.735042735042735" height="55.4899" fill="#5488c0"><title>k16-both-kicks, HiGHS, с Pathfinder, 0,568021 с (статус не записан)</title></rect>
 <rect x="161.204594017094" y="268.8546" width="7.735042735042735" height="75.1454" fill="#147353"><title>k16-both-kicks, SCIP, без Pathfinder, 0,769224 с (статус не записан)</title></rect>
@@ -85,7 +85,7 @@
 <rect x="796.4449786324786" y="82.2850" width="7.735042735042735" height="261.7150" fill="#4a9c7d"><title>k64-all, SCIP, с Pathfinder, 2,67904 с (статус не записан)</title></rect>
 <rect x="807.5834401709402" y="204.9869" width="7.735042735042735" height="139.0131" fill="#7750a1"><title>k64-all, FSCIP, без Pathfinder, 1,423004 с (статус не записан)</title></rect>
 <rect x="816.2853632478633" y="82.2073" width="7.735042735042735" height="261.7927" fill="#a17dc1"><title>k64-all, FSCIP, с Pathfinder, 2,679835 с (статус не записан)</title></rect>
-<text x="795.9615384615385" y="369" text-anchor="middle" font-weight="bold">k64-all</text>
+<text x="795.9615384615385" y="359" text-anchor="end" font-size="12" transform="rotate(-32 795.9615384615385 359)">k64-all</text>
 <rect x="837.5180555555555" y="278.7042" width="7.735042735042735" height="65.2958" fill="#235a9e"><title>k64-both-kicks, HiGHS, без Pathfinder, 0,668399 с (статус не записан)</title></rect>
 <rect x="846.2199786324786" y="195.1985" width="7.735042735042735" height="148.8015" fill="#5488c0"><title>k64-both-kicks, HiGHS, с Pathfinder, 1,523203 с (статус не записан)</title></rect>
 <rect x="857.3584401709402" y="209.9869" width="7.735042735042735" height="134.0131" fill="#147353"><title>k64-both-kicks, SCIP, без Pathfinder, 1,371822 с (статус не записан)</title></rect>

@@ -30,6 +30,7 @@ def chart(file, title, modes, tasks):
         label(left - 10, y(tick) + 5, number(tick), 'text-anchor="end"')
     parts.append(f'<path d="M{left} {top}V{bottom}H{right}" fill="none" stroke="#64748b"/>')
     slot = (right - left) / len(tasks)
+    rotate_labels = any(len(name) * 8 > slot - 10 for name, _, _ in tasks)
     for index, (name, _, runs) in enumerate(tasks):
         center = left + (index + .5) * slot
         present = [(i, v, status) for i, (v, status) in enumerate(runs) if v is not None]
@@ -43,7 +44,7 @@ def chart(file, title, modes, tasks):
             if status == 'TL':
                 label(x+bar/2, y(value)-8, 'TL', 'text-anchor="middle" fill="#be142b" font-weight="bold"')
             x += bar + (gaps[j] if j < len(gaps) else 0)
-        if len(name) * 8 > slot - 10:
+        if rotate_labels:
             label(center, bottom+15, name, f'text-anchor="end" font-size="12" transform="rotate(-32 {center} {bottom+15})"')
         else:
             label(center, bottom+25, name, 'text-anchor="middle" font-weight="bold"')

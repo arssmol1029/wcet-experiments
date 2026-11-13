@@ -15,22 +15,22 @@
 <rect x="119.97037037037039" y="331.1279" width="16.75925925925926" height="12.8721" fill="#5488c0"><title>additive-memory, HiGHS, с Pathfinder, 0,032851 с (статус не записан)</title></rect>
 <rect x="144.10370370370373" y="102.4098" width="16.75925925925926" height="241.5902" fill="#147353"><title>additive-memory, SCIP, без Pathfinder, 0,616563 с (статус не записан)</title></rect>
 <rect x="162.9578703703704" y="101.8809" width="16.75925925925926" height="242.1191" fill="#4a9c7d"><title>additive-memory, SCIP, с Pathfinder, 0,617913 с (статус не записан)</title></rect>
-<text x="140.41666666666669" y="369" text-anchor="middle" font-weight="bold">additive-memory</text>
+<text x="140.41666666666669" y="359" text-anchor="end" font-size="12" transform="rotate(-32 140.41666666666669 359)">additive-memory</text>
 <rect x="251.94953703703703" y="331.1992" width="16.75925925925926" height="12.8008" fill="#235a9e"><title>linear-memory, HiGHS, без Pathfinder, 0,032669 с (статус не записан)</title></rect>
 <rect x="270.8037037037037" y="331.0871" width="16.75925925925926" height="12.9129" fill="#5488c0"><title>linear-memory, HiGHS, с Pathfinder, 0,032955 с (статус не записан)</title></rect>
 <rect x="294.93703703703704" y="82.5164" width="16.75925925925926" height="261.4836" fill="#147353"><title>linear-memory, SCIP, без Pathfinder, 0,667333 с (статус не записан)</title></rect>
 <rect x="313.79120370370373" y="101.7982" width="16.75925925925926" height="242.2018" fill="#4a9c7d"><title>linear-memory, SCIP, с Pathfinder, 0,618124 с (статус не записан)</title></rect>
-<text x="291.25" y="369" text-anchor="middle" font-weight="bold">linear-memory</text>
+<text x="291.25" y="359" text-anchor="end" font-size="12" transform="rotate(-32 291.25 359)">linear-memory</text>
 <rect x="402.7828703703704" y="337.6268" width="16.75925925925926" height="6.3732" fill="#235a9e"><title>nested-memory, HiGHS, без Pathfinder, 0,016265 с (статус не записан)</title></rect>
 <rect x="421.6370370370371" y="331.1016" width="16.75925925925926" height="12.8984" fill="#5488c0"><title>nested-memory, HiGHS, с Pathfinder, 0,032918 с (статус не записан)</title></rect>
 <rect x="445.7703703703704" y="82.1818" width="16.75925925925926" height="261.8182" fill="#147353"><title>nested-memory, SCIP, без Pathfinder, 0,668187 с (статус не записан)</title></rect>
 <rect x="464.6245370370371" y="101.8064" width="16.75925925925926" height="242.1936" fill="#4a9c7d"><title>nested-memory, SCIP, с Pathfinder, 0,618103 с (статус не записан)</title></rect>
-<text x="442.08333333333337" y="369" text-anchor="middle" font-weight="bold">nested-memory</text>
+<text x="442.08333333333337" y="359" text-anchor="end" font-size="12" transform="rotate(-32 442.08333333333337 359)">nested-memory</text>
 <rect x="553.6162037037038" y="331.1455" width="16.75925925925926" height="12.8545" fill="#235a9e"><title>nonlinear-memory, HiGHS, без Pathfinder, 0,032806 с (статус не записан)</title></rect>
 <rect x="572.4703703703705" y="337.6907" width="16.75925925925926" height="6.3093" fill="#5488c0"><title>nonlinear-memory, HiGHS, с Pathfinder, 0,016102 с (статус не записан)</title></rect>
 <rect x="596.6037037037038" y="101.8088" width="16.75925925925926" height="242.1912" fill="#147353"><title>nonlinear-memory, SCIP, без Pathfinder, 0,618097 с (статус не записан)</title></rect>
 <rect x="615.4578703703704" y="121.4294" width="16.75925925925926" height="222.5706" fill="#4a9c7d"><title>nonlinear-memory, SCIP, с Pathfinder, 0,568023 с (статус не записан)</title></rect>
-<text x="592.9166666666667" y="369" text-anchor="middle" font-weight="bold">nonlinear-memory</text>
+<text x="592.9166666666667" y="359" text-anchor="end" font-size="12" transform="rotate(-32 592.9166666666667 359)">nonlinear-memory</text>
 <rect x="704.4495370370371" y="331.1976" width="16.75925925925926" height="12.8024" fill="#235a9e"><title>shortcircuit-memory, HiGHS, без Pathfinder, 0,032673 с (статус не записан)</title></rect>
 <rect x="723.3037037037037" y="318.4665" width="16.75925925925926" height="25.5335" fill="#5488c0"><title>shortcircuit-memory, HiGHS, с Pathfinder, 0,065164 с (статус не записан)</title></rect>
 <rect x="747.437037037037" y="82.7864" width="16.75925925925926" height="261.2136" fill="#147353"><title>shortcircuit-memory, SCIP, без Pathfinder, 0,666644 с (статус не записан)</title></rect>
@@ -40,7 +40,7 @@
 <rect x="874.137037037037" y="331.1040" width="16.75925925925926" height="12.8960" fill="#5488c0"><title>simple-memory, HiGHS, с Pathfinder, 0,032912 с (статус не записан)</title></rect>
 <rect x="898.2703703703703" y="102.5004" width="16.75925925925926" height="241.4996" fill="#147353"><title>simple-memory, SCIP, без Pathfinder, 0,616332 с (статус не записан)</title></rect>
 <rect x="917.1245370370369" y="121.6532" width="16.75925925925926" height="222.3468" fill="#4a9c7d"><title>simple-memory, SCIP, с Pathfinder, 0,567452 с (статус не записан)</title></rect>
-<text x="894.5833333333334" y="369" text-anchor="middle" font-weight="bold">simple-memory</text>
+<text x="894.5833333333334" y="359" text-anchor="end" font-size="12" transform="rotate(-32 894.5833333333334 359)">simple-memory</text>
 <rect x="75" y="452" width="13" height="13" rx="2" fill="#235a9e"/>
 <text x="94" y="463" font-size="13">HiGHS без Pathfinder</text>
 <rect x="75" y="475" width="13" height="13" rx="2" fill="#5488c0"/>
