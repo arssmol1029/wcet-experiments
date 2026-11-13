@@ -125,6 +125,7 @@
 
 | Задача | HiGHS on | HiGHS off | SCIP on | SCIP off | FSCIP on | FSCIP off |
 |---|---:|---:|---:|---:|---:|---:|
+| [72](hard-lp/openssh-overlap/72/README.md) | 162,05 с · решено | — | 348,18 с · решено | — | 884,25 с · решено | — |
 | [96](hard-lp/openssh-overlap/96/README.md) | TL (1800 с) | — | TL (1800 с) | — | TL (1800 с) | — |
 
 </details>
