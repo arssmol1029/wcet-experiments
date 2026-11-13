@@ -18,8 +18,8 @@
 
 | Решатель | Presolve on | Presolve off |
 |---|---|---|
-| HiGHS | 292,87 с | — |
-| SCIP | TL | — |
-| FSCIP | TL | — |
+| HiGHS | 292,87 с | TL |
+| SCIP | TL | 503,44 с |
+| FSCIP | TL | 1012,09 с |
 
-`—` означает, что замера нет. HiGHS и SCIP работали в один поток, FSCIP — с четырьмя работниками, seed 0.
+HiGHS и SCIP работали в один поток, FSCIP — с четырьмя работниками, seed 0.

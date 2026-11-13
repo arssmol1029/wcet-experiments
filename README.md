@@ -125,8 +125,8 @@
 
 | Задача | HiGHS on | HiGHS off | SCIP on | SCIP off | FSCIP on | FSCIP off |
 |---|---:|---:|---:|---:|---:|---:|
-| [72](hard-lp/openssh-overlap/72/README.md) | 162,05 с · решено | — | 348,18 с · решено | — | 884,25 с · решено | — |
-| [96](hard-lp/openssh-overlap/96/README.md) | TL (1800 с) | — | TL (1800 с) | — | TL (1800 с) | — |
+| [72](hard-lp/openssh-overlap/72/README.md) | 162,05 с · решено | 190,52 с · решено | 348,18 с · решено | 510,5 с · решено | 884,25 с · решено | 288,7 с · решено |
+| [96](hard-lp/openssh-overlap/96/README.md) | TL (1800 с) | TL (1800 с) | TL (1800 с) | TL (1800 с) | TL (1800 с) | TL (1800 с) |
 
 </details>
 
@@ -152,8 +152,8 @@
 
 | Задача | HiGHS on | HiGHS off | SCIP on | SCIP off | FSCIP on | FSCIP off |
 |---|---:|---:|---:|---:|---:|---:|
-| [64](hard-lp/redis-acl/64/README.md) | 292,87 с · решено | — | TL (1800 с) | — | TL (1800 с) | — |
-| [80](hard-lp/redis-acl/80/README.md) | TL (1800 с) | — | TL (1800 с) | — | TL (1800 с) | — |
+| [64](hard-lp/redis-acl/64/README.md) | 292,87 с · решено | TL (1800 с) | TL (1800 с) | 503,44 с · решено | TL (1800 с) | 1012,09 с · решено |
+| [80](hard-lp/redis-acl/80/README.md) | TL (1800 с) | TL (1800 с) | TL (1800 с) | 1254,21 с · решено | TL (1800 с) | TL (1800 с) |
 
 </details>
 

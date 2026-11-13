@@ -11,18 +11,27 @@
 <path d="M65 125.82H970" stroke="#dce2eb"/>
 <text x="55" y="130.81818181818184" text-anchor="end">1500</text>
 <path d="M65 56V344H970" fill="none" stroke="#64748b"/>
-<rect x="229.17000000000002" y="301.4007" width="32" height="42.5993" fill="#235a9e"><title>64, HiGHS, on, 292,87 с (решено)</title></rect>
-<rect x="275.25" y="82.1818" width="32" height="261.8182" fill="#147353"><title>64, SCIP, on, 1800 с (TL)</title></rect>
-<text x="291.25" y="74.18181818181824" text-anchor="middle" fill="#be142b" font-weight="bold">TL</text>
-<rect x="321.33" y="82.1818" width="32" height="261.8182" fill="#7750a1"><title>64, FSCIP, on, 1800 с (TL)</title></rect>
-<text x="337.33" y="74.18181818181824" text-anchor="middle" fill="#be142b" font-weight="bold">TL</text>
+<rect x="175.17000000000002" y="301.4007" width="32" height="42.5993" fill="#235a9e"><title>64, HiGHS, on, 292,87 с (решено)</title></rect>
+<rect x="211.17000000000002" y="82.1818" width="32" height="261.8182" fill="#5488c0"><title>64, HiGHS, off, 1800 с (TL)</title></rect>
+<text x="227.17000000000002" y="74.18181818181824" text-anchor="middle" fill="#be142b" font-weight="bold">TL</text>
+<rect x="257.25" y="82.1818" width="32" height="261.8182" fill="#147353"><title>64, SCIP, on, 1800 с (TL)</title></rect>
+<text x="273.25" y="74.18181818181824" text-anchor="middle" fill="#be142b" font-weight="bold">TL</text>
+<rect x="293.25" y="270.7724" width="32" height="73.2276" fill="#4a9c7d"><title>64, SCIP, off, 503,44 с (решено)</title></rect>
+<rect x="339.33" y="82.1818" width="32" height="261.8182" fill="#7750a1"><title>64, FSCIP, on, 1800 с (TL)</title></rect>
+<text x="355.33" y="74.18181818181824" text-anchor="middle" fill="#be142b" font-weight="bold">TL</text>
+<rect x="375.33" y="196.7869" width="32" height="147.2131" fill="#a17dc1"><title>64, FSCIP, off, 1012,09 с (решено)</title></rect>
 <text x="291.25" y="369" text-anchor="middle" font-weight="bold">64</text>
-<rect x="681.67" y="82.1818" width="32" height="261.8182" fill="#235a9e"><title>80, HiGHS, on, 1800 с (TL)</title></rect>
-<text x="697.67" y="74.18181818181824" text-anchor="middle" fill="#be142b" font-weight="bold">TL</text>
-<rect x="727.75" y="82.1818" width="32" height="261.8182" fill="#147353"><title>80, SCIP, on, 1800 с (TL)</title></rect>
-<text x="743.75" y="74.18181818181824" text-anchor="middle" fill="#be142b" font-weight="bold">TL</text>
-<rect x="773.83" y="82.1818" width="32" height="261.8182" fill="#7750a1"><title>80, FSCIP, on, 1800 с (TL)</title></rect>
-<text x="789.83" y="74.18181818181824" text-anchor="middle" fill="#be142b" font-weight="bold">TL</text>
+<rect x="627.67" y="82.1818" width="32" height="261.8182" fill="#235a9e"><title>80, HiGHS, on, 1800 с (TL)</title></rect>
+<text x="643.67" y="74.18181818181824" text-anchor="middle" fill="#be142b" font-weight="bold">TL</text>
+<rect x="663.67" y="82.1818" width="32" height="261.8182" fill="#5488c0"><title>80, HiGHS, off, 1800 с (TL)</title></rect>
+<text x="679.67" y="74.18181818181824" text-anchor="middle" fill="#be142b" font-weight="bold">TL</text>
+<rect x="709.75" y="82.1818" width="32" height="261.8182" fill="#147353"><title>80, SCIP, on, 1800 с (TL)</title></rect>
+<text x="725.75" y="74.18181818181824" text-anchor="middle" fill="#be142b" font-weight="bold">TL</text>
+<rect x="745.75" y="161.5695" width="32" height="182.4305" fill="#4a9c7d"><title>80, SCIP, off, 1254,21 с (решено)</title></rect>
+<rect x="791.83" y="82.1818" width="32" height="261.8182" fill="#7750a1"><title>80, FSCIP, on, 1800 с (TL)</title></rect>
+<text x="807.83" y="74.18181818181824" text-anchor="middle" fill="#be142b" font-weight="bold">TL</text>
+<rect x="827.83" y="82.1818" width="32" height="261.8182" fill="#a17dc1"><title>80, FSCIP, off, 1800 с (TL)</title></rect>
+<text x="843.83" y="74.18181818181824" text-anchor="middle" fill="#be142b" font-weight="bold">TL</text>
 <text x="743.75" y="369" text-anchor="middle" font-weight="bold">80</text>
 <rect x="75" y="452" width="13" height="13" rx="2" fill="#235a9e"/>
 <text x="94" y="463" font-size="13">HiGHS on</text>
