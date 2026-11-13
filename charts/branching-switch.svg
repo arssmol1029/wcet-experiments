@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 510" width="1000" height="510" role="img"><title>switch</title>
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="Arial, sans-serif" font-size="14" fill="#182337">
+<text x="65" y="31" font-weight="bold">Время решения, с</text>
+<path d="M65 344.00H970" stroke="#dce2eb"/>
+<text x="55" y="349.0" text-anchor="end">0</text>
+<path d="M65 265.68H970" stroke="#dce2eb"/>
+<text x="55" y="270.6816686155603" text-anchor="end">0,2</text>
+<path d="M65 187.36H970" stroke="#dce2eb"/>
+<text x="55" y="192.36333723112062" text-anchor="end">0,4</text>
+<path d="M65 109.05H970" stroke="#dce2eb"/>
+<text x="55" y="114.045005846681" text-anchor="end">0,6</text>
+<path d="M65 56V344H970" fill="none" stroke="#64748b"/>
+<rect x="140.79333333333335" y="331.2263" width="32" height="12.7737" fill="#235a9e"><title>dense-memory, HiGHS, без Pathfinder, 0,03262 с (статус не записан)</title></rect>
+<rect x="176.79333333333335" y="331.2212" width="32" height="12.7788" fill="#5488c0"><title>dense-memory, HiGHS, с Pathfinder, 0,032633 с (статус не записан)</title></rect>
+<rect x="222.87333333333333" y="101.6827" width="32" height="242.3173" fill="#147353"><title>dense-memory, SCIP, без Pathfinder, 0,618801 с (статус не записан)</title></rect>
+<rect x="258.87333333333333" y="99.0704" width="32" height="244.9296" fill="#4a9c7d"><title>dense-memory, SCIP, с Pathfinder, 0,625472 с (статус не записан)</title></rect>
+<text x="215.83333333333334" y="369" text-anchor="middle" font-weight="bold">dense-memory</text>
+<rect x="442.46000000000004" y="331.1625" width="32" height="12.8375" fill="#235a9e"><title>dense-tree-memory, HiGHS, без Pathfinder, 0,032783 с (статус не записан)</title></rect>
+<rect x="478.46000000000004" y="318.5387" width="32" height="25.4613" fill="#5488c0"><title>dense-tree-memory, HiGHS, с Pathfinder, 0,06502 с (статус не записан)</title></rect>
+<rect x="524.5400000000001" y="82.4066" width="32" height="261.5934" fill="#147353"><title>dense-tree-memory, SCIP, без Pathfinder, 0,668026 с (статус не записан)</title></rect>
+<rect x="560.5400000000001" y="102.2016" width="32" height="241.7984" fill="#4a9c7d"><title>dense-tree-memory, SCIP, с Pathfinder, 0,617476 с (статус не записан)</title></rect>
+<text x="517.5" y="369" text-anchor="middle" font-weight="bold">dense-tree-memory</text>
+<rect x="744.1266666666668" y="331.2188" width="32" height="12.7812" fill="#235a9e"><title>sparse-memory, HiGHS, без Pathfinder, 0,032639 с (статус не записан)</title></rect>
+<rect x="780.1266666666668" y="331.1875" width="32" height="12.8125" fill="#5488c0"><title>sparse-memory, HiGHS, с Pathfinder, 0,032719 с (статус не записан)</title></rect>
+<rect x="826.2066666666668" y="82.1818" width="32" height="261.8182" fill="#147353"><title>sparse-memory, SCIP, без Pathfinder, 0,6686 с (статус не записан)</title></rect>
+<rect x="862.2066666666668" y="101.9376" width="32" height="242.0624" fill="#4a9c7d"><title>sparse-memory, SCIP, с Pathfinder, 0,61815 с (статус не записан)</title></rect>
+<text x="819.1666666666667" y="369" text-anchor="middle" font-weight="bold">sparse-memory</text>
+<rect x="75" y="452" width="13" height="13" rx="2" fill="#235a9e"/>
+<text x="94" y="463" font-size="13">HiGHS без Pathfinder</text>
+<rect x="75" y="475" width="13" height="13" rx="2" fill="#5488c0"/>
+<text x="94" y="486" font-size="13">HiGHS с Pathfinder</text>
+<rect x="379" y="452" width="13" height="13" rx="2" fill="#147353"/>
+<text x="398" y="463" font-size="13">SCIP без Pathfinder</text>
+<rect x="379" y="475" width="13" height="13" rx="2" fill="#4a9c7d"/>
+<text x="398" y="486" font-size="13">SCIP с Pathfinder</text>
+<rect x="683" y="452" width="13" height="13" rx="2" fill="#7750a1"/>
+<text x="702" y="463" font-size="13">FSCIP без Pathfinder</text>
+<rect x="683" y="475" width="13" height="13" rx="2" fill="#a17dc1"/>
+<text x="702" y="486" font-size="13">FSCIP с Pathfinder</text>
+</g></svg>

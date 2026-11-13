@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 510" width="1000" height="510" role="img"><title>bzip2-blocksort</title>
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="Arial, sans-serif" font-size="14" fill="#182337">
+<text x="65" y="31" font-weight="bold">Время решения, с</text>
+<path d="M65 344.00H970" stroke="#dce2eb"/>
+<text x="55" y="349.0" text-anchor="end">0</text>
+<path d="M65 280.01H970" stroke="#dce2eb"/>
+<text x="55" y="285.01143262403787" text-anchor="end">0,25</text>
+<path d="M65 216.02H970" stroke="#dce2eb"/>
+<text x="55" y="221.02286524807568" text-anchor="end">0,5</text>
+<path d="M65 152.03H970" stroke="#dce2eb"/>
+<text x="55" y="157.03429787211354" text-anchor="end">0,75</text>
+<path d="M65 88.05H970" stroke="#dce2eb"/>
+<text x="55" y="93.04573049615138" text-anchor="end">1</text>
+<path d="M65 56V344H970" fill="none" stroke="#64748b"/>
+<rect x="455.42" y="314.7019" width="32" height="29.2981" fill="#235a9e"><title>bzip2-blocksort, HiGHS, без Pathfinder, 0,114466 с (статус не записан)</title></rect>
+<rect x="501.5" y="82.1818" width="32" height="261.8182" fill="#147353"><title>bzip2-blocksort, SCIP, без Pathfinder, 1,02291 с (статус не записан)</title></rect>
+<rect x="547.58" y="334.4503" width="32" height="9.5497" fill="#7750a1"><title>bzip2-blocksort, FSCIP, без Pathfinder, 0,03731 с (OPTIMAL)</title></rect>
+<text x="517.5" y="369" text-anchor="middle" font-weight="bold">bzip2-blocksort</text>
+<rect x="75" y="452" width="13" height="13" rx="2" fill="#235a9e"/>
+<text x="94" y="463" font-size="13">HiGHS без Pathfinder</text>
+<rect x="75" y="475" width="13" height="13" rx="2" fill="#5488c0"/>
+<text x="94" y="486" font-size="13">HiGHS с Pathfinder</text>
+<rect x="379" y="452" width="13" height="13" rx="2" fill="#147353"/>
+<text x="398" y="463" font-size="13">SCIP без Pathfinder</text>
+<rect x="379" y="475" width="13" height="13" rx="2" fill="#4a9c7d"/>
+<text x="398" y="486" font-size="13">SCIP с Pathfinder</text>
+<rect x="683" y="452" width="13" height="13" rx="2" fill="#7750a1"/>
+<text x="702" y="463" font-size="13">FSCIP без Pathfinder</text>
+<rect x="683" y="475" width="13" height="13" rx="2" fill="#a17dc1"/>
+<text x="702" y="486" font-size="13">FSCIP с Pathfinder</text>
+</g></svg>

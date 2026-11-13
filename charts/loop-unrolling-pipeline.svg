@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 510" width="1000" height="510" role="img"><title>pipeline</title>
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="Arial, sans-serif" font-size="14" fill="#182337">
+<text x="65" y="31" font-weight="bold">Время решения, с</text>
+<path d="M65 344.00H970" stroke="#dce2eb"/>
+<text x="55" y="349.0" text-anchor="end">0</text>
+<path d="M65 246.31H970" stroke="#dce2eb"/>
+<text x="55" y="251.31014791329048" text-anchor="end">1</text>
+<path d="M65 148.62H970" stroke="#dce2eb"/>
+<text x="55" y="153.62029582658096" text-anchor="end">2</text>
+<path d="M65 56V344H970" fill="none" stroke="#64748b"/>
+<rect x="71.74882478632479" y="308.1623" width="7.735042735042735" height="35.8377" fill="#235a9e"><title>k16-all, HiGHS, без Pathfinder, 0,366852 с (статус не записан)</title></rect>
+<rect x="80.45074786324787" y="268.9244" width="7.735042735042735" height="75.0756" fill="#5488c0"><title>k16-all, HiGHS, с Pathfinder, 0,76851 с (статус не записан)</title></rect>
+<rect x="91.58920940170941" y="264.0155" width="7.735042735042735" height="79.9845" fill="#147353"><title>k16-all, SCIP, без Pathfinder, 0,81876 с (статус не записан)</title></rect>
+<rect x="100.29113247863249" y="229.6097" width="7.735042735042735" height="114.3903" fill="#4a9c7d"><title>k16-all, SCIP, с Pathfinder, 1,170954 с (статус не записан)</title></rect>
+<rect x="111.42959401709403" y="245.1057" width="7.735042735042735" height="98.8943" fill="#7750a1"><title>k16-all, FSCIP, без Pathfinder, 1,012329 с (статус не записан)</title></rect>
+<rect x="120.13151709401711" y="214.8207" width="7.735042735042735" height="129.1793" fill="#a17dc1"><title>k16-all, FSCIP, с Pathfinder, 1,322341 с (статус не записан)</title></rect>
+<text x="99.8076923076923" y="369" text-anchor="middle" font-weight="bold">k16-all</text>
+<rect x="141.3642094017094" y="322.9016" width="7.735042735042735" height="21.0984" fill="#235a9e"><title>k16-both-kicks, HiGHS, без Pathfinder, 0,215973 с (статус не записан)</title></rect>
+<rect x="150.06613247863245" y="288.5101" width="7.735042735042735" height="55.4899" fill="#5488c0"><title>k16-both-kicks, HiGHS, с Pathfinder, 0,568021 с (статус не записан)</title></rect>
+<rect x="161.204594017094" y="268.8546" width="7.735042735042735" height="75.1454" fill="#147353"><title>k16-both-kicks, SCIP, без Pathfinder, 0,769224 с (статус не записан)</title></rect>
+<rect x="169.90651709401706" y="239.4291" width="7.735042735042735" height="104.5709" fill="#4a9c7d"><title>k16-both-kicks, SCIP, с Pathfinder, 1,070438 с (статус не записан)</title></rect>
+<rect x="181.0449786324786" y="245.1683" width="7.735042735042735" height="98.8317" fill="#7750a1"><title>k16-both-kicks, FSCIP, без Pathfinder, 1,011689 с (статус не записан)</title></rect>
+<rect x="189.74690170940167" y="219.6833" width="7.735042735042735" height="124.3167" fill="#a17dc1"><title>k16-both-kicks, FSCIP, с Pathfinder, 1,272565 с (статус не записан)</title></rect>
+<text x="169.4230769230769" y="359" text-anchor="end" font-size="12" transform="rotate(-32 169.4230769230769 359)">k16-both-kicks</text>
+<rect x="210.97959401709403" y="322.8736" width="7.735042735042735" height="21.1264" fill="#235a9e"><title>k16-both-shifts, HiGHS, без Pathfinder, 0,21626 с (статус не записан)</title></rect>
+<rect x="219.6815170940171" y="322.9096" width="7.735042735042735" height="21.0904" fill="#5488c0"><title>k16-both-shifts, HiGHS, с Pathfinder, 0,215891 с (статус не записан)</title></rect>
+<rect x="230.81997863247864" y="283.6187" width="7.735042735042735" height="60.3813" fill="#147353"><title>k16-both-shifts, SCIP, без Pathfinder, 0,618092 с (статус не записан)</title></rect>
+<rect x="239.5219017094017" y="278.7263" width="7.735042735042735" height="65.2737" fill="#4a9c7d"><title>k16-both-shifts, SCIP, с Pathfinder, 0,668173 с (статус не записан)</title></rect>
+<rect x="250.66036324786324" y="245.0300" width="7.735042735042735" height="98.9700" fill="#7750a1"><title>k16-both-shifts, FSCIP, без Pathfinder, 1,013104 с (статус не записан)</title></rect>
+<rect x="259.36228632478634" y="245.0867" width="7.735042735042735" height="98.9133" fill="#a17dc1"><title>k16-both-shifts, FSCIP, с Pathfinder, 1,012524 с (статус не записан)</title></rect>
+<text x="239.03846153846155" y="359" text-anchor="end" font-size="12" transform="rotate(-32 239.03846153846155 359)">k16-both-shifts</text>
+<rect x="280.5949786324786" y="337.6452" width="7.735042735042735" height="6.3548" fill="#235a9e"><title>k16-init-mac, HiGHS, без Pathfinder, 0,065051 с (статус не записан)</title></rect>
+<rect x="289.2969017094017" y="332.7330" width="7.735042735042735" height="11.2670" fill="#5488c0"><title>k16-init-mac, HiGHS, с Pathfinder, 0,115334 с (статус не записан)</title></rect>
+<rect x="300.4353632478632" y="283.6356" width="7.735042735042735" height="60.3644" fill="#147353"><title>k16-init-mac, SCIP, без Pathfinder, 0,617919 с (статус не записан)</title></rect>
+<rect x="309.1372863247863" y="283.6181" width="7.735042735042735" height="60.3819" fill="#4a9c7d"><title>k16-init-mac, SCIP, с Pathfinder, 0,618098 с (статус не записан)</title></rect>
+<rect x="320.27574786324783" y="245.1684" width="7.735042735042735" height="98.8316" fill="#7750a1"><title>k16-init-mac, FSCIP, без Pathfinder, 1,011687 с (статус не записан)</title></rect>
+<rect x="328.9776709401709" y="245.1554" width="7.735042735042735" height="98.8446" fill="#a17dc1"><title>k16-init-mac, FSCIP, с Pathfinder, 1,011821 с (статус не записан)</title></rect>
+<text x="308.65384615384613" y="359" text-anchor="end" font-size="12" transform="rotate(-32 308.65384615384613 359)">k16-init-mac</text>
+<rect x="350.21036324786326" y="337.6330" width="7.735042735042735" height="6.3670" fill="#235a9e"><title>k16-init-vlan, HiGHS, без Pathfinder, 0,065176 с (статус не записан)</title></rect>
+<rect x="358.91228632478635" y="332.7198" width="7.735042735042735" height="11.2802" fill="#5488c0"><title>k16-init-vlan, HiGHS, с Pathfinder, 0,11547 с (статус не записан)</title></rect>
+<rect x="370.05074786324786" y="283.6287" width="7.735042735042735" height="60.3713" fill="#147353"><title>k16-init-vlan, SCIP, без Pathfinder, 0,617989 с (статус не записан)</title></rect>
+<rect x="378.75267094017096" y="283.6265" width="7.735042735042735" height="60.3735" fill="#4a9c7d"><title>k16-init-vlan, SCIP, с Pathfinder, 0,618012 с (статус не записан)</title></rect>
+<rect x="389.89113247863247" y="245.1176" width="7.735042735042735" height="98.8824" fill="#7750a1"><title>k16-init-vlan, FSCIP, без Pathfinder, 1,012207 с (статус не записан)</title></rect>
+<rect x="398.59305555555557" y="245.1267" width="7.735042735042735" height="98.8733" fill="#a17dc1"><title>k16-init-vlan, FSCIP, с Pathfinder, 1,012114 с (статус не записан)</title></rect>
+<text x="378.2692307692308" y="359" text-anchor="end" font-size="12" transform="rotate(-32 378.2692307692308 359)">k16-init-vlan</text>
+<rect x="419.82574786324784" y="327.8731" width="7.735042735042735" height="16.1269" fill="#235a9e"><title>k16-mac-kicks, HiGHS, без Pathfinder, 0,165083 с (статус не записан)</title></rect>
+<rect x="428.52767094017094" y="327.8013" width="7.735042735042735" height="16.1987" fill="#5488c0"><title>k16-mac-kicks, HiGHS, с Pathfinder, 0,165818 с (статус не записан)</title></rect>
+<rect x="439.66613247863245" y="278.7180" width="7.735042735042735" height="65.2820" fill="#147353"><title>k16-mac-kicks, SCIP, без Pathfinder, 0,668258 с (статус не записан)</title></rect>
+<rect x="448.36805555555554" y="273.7744" width="7.735042735042735" height="70.2256" fill="#4a9c7d"><title>k16-mac-kicks, SCIP, с Pathfinder, 0,718863 с (статус не записан)</title></rect>
+<rect x="459.50651709401706" y="245.0774" width="7.735042735042735" height="98.9226" fill="#7750a1"><title>k16-mac-kicks, FSCIP, без Pathfinder, 1,012619 с (статус не записан)</title></rect>
+<rect x="468.20844017094015" y="245.1034" width="7.735042735042735" height="98.8966" fill="#a17dc1"><title>k16-mac-kicks, FSCIP, с Pathfinder, 1,012353 с (статус не записан)</title></rect>
+<text x="447.88461538461536" y="359" text-anchor="end" font-size="12" transform="rotate(-32 447.88461538461536 359)">k16-mac-kicks</text>
+<rect x="489.4411324786325" y="337.6765" width="7.735042735042735" height="6.3235" fill="#235a9e"><title>k16-none, HiGHS, без Pathfinder, 0,06473 с (статус не записан)</title></rect>
+<rect x="498.1430555555556" y="332.8054" width="7.735042735042735" height="11.1946" fill="#5488c0"><title>k16-none, HiGHS, с Pathfinder, 0,114593 с (статус не записан)</title></rect>
+<rect x="509.2815170940171" y="283.6153" width="7.735042735042735" height="60.3847" fill="#147353"><title>k16-none, SCIP, без Pathfinder, 0,618127 с (статус не записан)</title></rect>
+<rect x="517.9834401709402" y="283.6260" width="7.735042735042735" height="60.3740" fill="#4a9c7d"><title>k16-none, SCIP, с Pathfinder, 0,618017 с (статус не записан)</title></rect>
+<rect x="529.1219017094018" y="245.1650" width="7.735042735042735" height="98.8350" fill="#7750a1"><title>k16-none, FSCIP, без Pathfinder, 1,011722 с (статус не записан)</title></rect>
+<rect x="537.8238247863248" y="245.1724" width="7.735042735042735" height="98.8276" fill="#a17dc1"><title>k16-none, FSCIP, с Pathfinder, 1,011647 с (статус не записан)</title></rect>
+<text x="517.5" y="359" text-anchor="end" font-size="12" transform="rotate(-32 517.5 359)">k16-none</text>
+<rect x="559.0565170940171" y="327.8264" width="7.735042735042735" height="16.1736" fill="#235a9e"><title>k16-shift-left, HiGHS, без Pathfinder, 0,165561 с (статус не записан)</title></rect>
+<rect x="567.7584401709402" y="322.9027" width="7.735042735042735" height="21.0973" fill="#5488c0"><title>k16-shift-left, HiGHS, с Pathfinder, 0,215962 с (статус не записан)</title></rect>
+<rect x="578.8969017094017" y="278.4482" width="7.735042735042735" height="65.5518" fill="#147353"><title>k16-shift-left, SCIP, без Pathfinder, 0,67102 с (статус не записан)</title></rect>
+<rect x="587.5988247863248" y="278.7156" width="7.735042735042735" height="65.2844" fill="#4a9c7d"><title>k16-shift-left, SCIP, с Pathfinder, 0,668282 с (статус не записан)</title></rect>
+<rect x="598.7372863247864" y="245.1043" width="7.735042735042735" height="98.8957" fill="#7750a1"><title>k16-shift-left, FSCIP, без Pathfinder, 1,012344 с (статус не записан)</title></rect>
+<rect x="607.4392094017095" y="245.1550" width="7.735042735042735" height="98.8450" fill="#a17dc1"><title>k16-shift-left, FSCIP, с Pathfinder, 1,011825 с (статус не записан)</title></rect>
+<text x="587.1153846153846" y="359" text-anchor="end" font-size="12" transform="rotate(-32 587.1153846153846 359)">k16-shift-left</text>
+<rect x="628.6719017094016" y="327.8427" width="7.735042735042735" height="16.1573" fill="#235a9e"><title>k16-shift-right, HiGHS, без Pathfinder, 0,165394 с (статус не записан)</title></rect>
+<rect x="637.3738247863247" y="327.8194" width="7.735042735042735" height="16.1806" fill="#5488c0"><title>k16-shift-right, HiGHS, с Pathfinder, 0,165632 с (статус не записан)</title></rect>
+<rect x="648.5122863247863" y="283.6446" width="7.735042735042735" height="60.3554" fill="#147353"><title>k16-shift-right, SCIP, без Pathfinder, 0,617827 с (статус не записан)</title></rect>
+<rect x="657.2142094017094" y="278.7233" width="7.735042735042735" height="65.2767" fill="#4a9c7d"><title>k16-shift-right, SCIP, с Pathfinder, 0,668204 с (статус не записан)</title></rect>
+<rect x="668.3526709401709" y="245.0580" width="7.735042735042735" height="98.9420" fill="#7750a1"><title>k16-shift-right, FSCIP, без Pathfinder, 1,012818 с (статус не записан)</title></rect>
+<rect x="677.054594017094" y="245.0879" width="7.735042735042735" height="98.9121" fill="#a17dc1"><title>k16-shift-right, FSCIP, с Pathfinder, 1,012512 с (статус не записан)</title></rect>
+<text x="656.7307692307692" y="359" text-anchor="end" font-size="12" transform="rotate(-32 656.7307692307692 359)">k16-shift-right</text>
+<rect x="698.2872863247862" y="332.7172" width="7.735042735042735" height="11.2828" fill="#235a9e"><title>k16-vlan-kicks, HiGHS, без Pathfinder, 0,115496 с (статус не записан)</title></rect>
+<rect x="706.9892094017093" y="327.8069" width="7.735042735042735" height="16.1931" fill="#5488c0"><title>k16-vlan-kicks, HiGHS, с Pathfinder, 0,16576 с (статус не записан)</title></rect>
+<rect x="718.1276709401709" y="278.7016" width="7.735042735042735" height="65.2984" fill="#147353"><title>k16-vlan-kicks, SCIP, без Pathfinder, 0,668426 с (статус не записан)</title></rect>
+<rect x="726.829594017094" y="273.8063" width="7.735042735042735" height="70.1937" fill="#4a9c7d"><title>k16-vlan-kicks, SCIP, с Pathfinder, 0,718536 с (статус не записан)</title></rect>
+<rect x="737.9680555555556" y="245.1002" width="7.735042735042735" height="98.8998" fill="#7750a1"><title>k16-vlan-kicks, FSCIP, без Pathfinder, 1,012386 с (статус не записан)</title></rect>
+<rect x="746.6699786324787" y="245.1333" width="7.735042735042735" height="98.8667" fill="#a17dc1"><title>k16-vlan-kicks, FSCIP, с Pathfinder, 1,012047 с (статус не записан)</title></rect>
+<text x="726.3461538461538" y="359" text-anchor="end" font-size="12" transform="rotate(-32 726.3461538461538 359)">k16-vlan-kicks</text>
+<rect x="767.9026709401709" y="259.0505" width="7.735042735042735" height="84.9495" fill="#235a9e"><title>k64-all, HiGHS, без Pathfinder, 0,869584 с (статус не записан)</title></rect>
+<rect x="776.604594017094" y="185.3283" width="7.735042735042735" height="158.6717" fill="#5488c0"><title>k64-all, HiGHS, с Pathfinder, 1,624239 с (статус не записан)</title></rect>
+<rect x="787.7430555555555" y="200.1888" width="7.735042735042735" height="143.8112" fill="#147353"><title>k64-all, SCIP, без Pathfinder, 1,47212 с (статус не записан)</title></rect>
+<rect x="796.4449786324786" y="82.2850" width="7.735042735042735" height="261.7150" fill="#4a9c7d"><title>k64-all, SCIP, с Pathfinder, 2,67904 с (статус не записан)</title></rect>
+<rect x="807.5834401709402" y="204.9869" width="7.735042735042735" height="139.0131" fill="#7750a1"><title>k64-all, FSCIP, без Pathfinder, 1,423004 с (статус не записан)</title></rect>
+<rect x="816.2853632478633" y="82.2073" width="7.735042735042735" height="261.7927" fill="#a17dc1"><title>k64-all, FSCIP, с Pathfinder, 2,679835 с (статус не записан)</title></rect>
+<text x="795.9615384615385" y="369" text-anchor="middle" font-weight="bold">k64-all</text>
+<rect x="837.5180555555555" y="278.7042" width="7.735042735042735" height="65.2958" fill="#235a9e"><title>k64-both-kicks, HiGHS, без Pathfinder, 0,668399 с (статус не записан)</title></rect>
+<rect x="846.2199786324786" y="195.1985" width="7.735042735042735" height="148.8015" fill="#5488c0"><title>k64-both-kicks, HiGHS, с Pathfinder, 1,523203 с (статус не записан)</title></rect>
+<rect x="857.3584401709402" y="209.9869" width="7.735042735042735" height="134.0131" fill="#147353"><title>k64-both-kicks, SCIP, без Pathfinder, 1,371822 с (статус не записан)</title></rect>
+<rect x="866.0603632478633" y="85.9525" width="7.735042735042735" height="258.0475" fill="#4a9c7d"><title>k64-both-kicks, SCIP, с Pathfinder, 2,641497 с (статус не записан)</title></rect>
+<rect x="877.1988247863248" y="214.7582" width="7.735042735042735" height="129.2418" fill="#7750a1"><title>k64-both-kicks, FSCIP, без Pathfinder, 1,322981 с (статус не записан)</title></rect>
+<rect x="885.900747863248" y="82.1818" width="7.735042735042735" height="261.8182" fill="#a17dc1"><title>k64-both-kicks, FSCIP, с Pathfinder, 2,680096 с (статус не записан)</title></rect>
+<text x="865.5769230769231" y="359" text-anchor="end" font-size="12" transform="rotate(-32 865.5769230769231 359)">k64-both-kicks</text>
+<rect x="907.13344017094" y="337.6370" width="7.735042735042735" height="6.3630" fill="#235a9e"><title>k64-none, HiGHS, без Pathfinder, 0,065135 с (статус не записан)</title></rect>
+<rect x="915.8353632478631" y="332.7250" width="7.735042735042735" height="11.2750" fill="#5488c0"><title>k64-none, HiGHS, с Pathfinder, 0,115416 с (статус не записан)</title></rect>
+<rect x="926.9738247863247" y="283.6284" width="7.735042735042735" height="60.3716" fill="#147353"><title>k64-none, SCIP, без Pathfinder, 0,617993 с (статус не записан)</title></rect>
+<rect x="935.6757478632478" y="283.6219" width="7.735042735042735" height="60.3781" fill="#4a9c7d"><title>k64-none, SCIP, с Pathfinder, 0,618059 с (статус не записан)</title></rect>
+<rect x="946.8142094017094" y="245.1368" width="7.735042735042735" height="98.8632" fill="#7750a1"><title>k64-none, FSCIP, без Pathfinder, 1,012011 с (статус не записан)</title></rect>
+<rect x="955.5161324786325" y="245.2046" width="7.735042735042735" height="98.7954" fill="#a17dc1"><title>k64-none, FSCIP, с Pathfinder, 1,011317 с (статус не записан)</title></rect>
+<text x="935.1923076923076" y="359" text-anchor="end" font-size="12" transform="rotate(-32 935.1923076923076 359)">k64-none</text>
+<rect x="75" y="452" width="13" height="13" rx="2" fill="#235a9e"/>
+<text x="94" y="463" font-size="13">HiGHS без Pathfinder</text>
+<rect x="75" y="475" width="13" height="13" rx="2" fill="#5488c0"/>
+<text x="94" y="486" font-size="13">HiGHS с Pathfinder</text>
+<rect x="379" y="452" width="13" height="13" rx="2" fill="#147353"/>
+<text x="398" y="463" font-size="13">SCIP без Pathfinder</text>
+<rect x="379" y="475" width="13" height="13" rx="2" fill="#4a9c7d"/>
+<text x="398" y="486" font-size="13">SCIP с Pathfinder</text>
+<rect x="683" y="452" width="13" height="13" rx="2" fill="#7750a1"/>
+<text x="702" y="463" font-size="13">FSCIP без Pathfinder</text>
+<rect x="683" y="475" width="13" height="13" rx="2" fill="#a17dc1"/>
+<text x="702" y="486" font-size="13">FSCIP с Pathfinder</text>
+</g></svg>

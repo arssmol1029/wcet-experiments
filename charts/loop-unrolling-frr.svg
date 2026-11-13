@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 510" width="1000" height="510" role="img"><title>frr</title>
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="Arial, sans-serif" font-size="14" fill="#182337">
+<text x="65" y="31" font-weight="bold">Время решения, с</text>
+<path d="M65 344.00H970" stroke="#dce2eb"/>
+<text x="55" y="349.0" text-anchor="end">0</text>
+<path d="M65 230.46H970" stroke="#dce2eb"/>
+<text x="55" y="235.45874490559905" text-anchor="end">1000</text>
+<path d="M65 116.92H970" stroke="#dce2eb"/>
+<text x="55" y="121.9174898111981" text-anchor="end">2000</text>
+<path d="M65 56V344H970" fill="none" stroke="#64748b"/>
+<rect x="74.7483024691358" y="343.9812" width="11.17283950617284" height="0.0188" fill="#235a9e"><title>v4-all, HiGHS, без Pathfinder, 0,165752 с (статус не записан)</title></rect>
+<rect x="87.31774691358024" y="343.9070" width="11.17283950617284" height="0.0930" fill="#5488c0"><title>v4-all, HiGHS, с Pathfinder, 0,819182 с (статус не записан)</title></rect>
+<rect x="103.40663580246913" y="343.9127" width="11.17283950617284" height="0.0873" fill="#147353"><title>v4-all, SCIP, без Pathfinder, 0,768847 с (статус не записан)</title></rect>
+<rect x="115.97608024691357" y="343.8727" width="11.17283950617284" height="0.1273" fill="#4a9c7d"><title>v4-all, SCIP, с Pathfinder, 1,121535 с (статус не записан)</title></rect>
+<rect x="132.06496913580247" y="343.8851" width="11.17283950617284" height="0.1149" fill="#7750a1"><title>v4-all, FSCIP, без Pathfinder, 1,01225 с (статус не записан)</title></rect>
+<rect x="144.63441358024693" y="343.8441" width="11.17283950617284" height="0.1559" fill="#a17dc1"><title>v4-all, FSCIP, с Pathfinder, 1,372764 с (статус не записан)</title></rect>
+<text x="115.27777777777777" y="369" text-anchor="middle" font-weight="bold">v4-all</text>
+<rect x="175.30385802469135" y="343.9963" width="11.17283950617284" height="0.0037" fill="#235a9e"><title>v4-nexthops, HiGHS, без Pathfinder, 0,032581 с (статус не записан)</title></rect>
+<rect x="187.8733024691358" y="343.9963" width="11.17283950617284" height="0.0037" fill="#5488c0"><title>v4-nexthops, HiGHS, с Pathfinder, 0,032852 с (статус не записан)</title></rect>
+<rect x="203.9621913580247" y="343.9355" width="11.17283950617284" height="0.0645" fill="#147353"><title>v4-nexthops, SCIP, без Pathfinder, 0,567957 с (статус не записан)</title></rect>
+<rect x="216.53163580246917" y="343.9355" width="11.17283950617284" height="0.0645" fill="#4a9c7d"><title>v4-nexthops, SCIP, с Pathfinder, 0,568076 с (статус не записан)</title></rect>
+<rect x="232.62052469135807" y="343.8851" width="11.17283950617284" height="0.1149" fill="#7750a1"><title>v4-nexthops, FSCIP, без Pathfinder, 1,011588 с (статус не записан)</title></rect>
+<rect x="245.18996913580253" y="343.8851" width="11.17283950617284" height="0.1149" fill="#a17dc1"><title>v4-nexthops, FSCIP, с Pathfinder, 1,011659 с (статус не записан)</title></rect>
+<text x="215.83333333333334" y="369" text-anchor="middle" font-weight="bold">v4-nexthops</text>
+<rect x="275.85941358024695" y="343.9963" width="11.17283950617284" height="0.0037" fill="#235a9e"><title>v4-none, HiGHS, без Pathfinder, 0,032682 с (статус не записан)</title></rect>
+<rect x="288.4288580246914" y="343.9926" width="11.17283950617284" height="0.0074" fill="#5488c0"><title>v4-none, HiGHS, с Pathfinder, 0,065039 с (статус не записан)</title></rect>
+<rect x="304.5177469135803" y="343.9298" width="11.17283950617284" height="0.0702" fill="#147353"><title>v4-none, SCIP, без Pathfinder, 0,618009 с (статус не записан)</title></rect>
+<rect x="317.08719135802477" y="343.9355" width="11.17283950617284" height="0.0645" fill="#4a9c7d"><title>v4-none, SCIP, с Pathfinder, 0,567663 с (статус не записан)</title></rect>
+<rect x="333.17608024691367" y="343.8851" width="11.17283950617284" height="0.1149" fill="#7750a1"><title>v4-none, FSCIP, без Pathfinder, 1,011825 с (статус не записан)</title></rect>
+<rect x="345.7455246913581" y="343.8851" width="11.17283950617284" height="0.1149" fill="#a17dc1"><title>v4-none, FSCIP, с Pathfinder, 1,011944 с (статус не записан)</title></rect>
+<text x="316.3888888888889" y="369" text-anchor="middle" font-weight="bold">v4-none</text>
+<rect x="376.4149691358025" y="343.9926" width="11.17283950617284" height="0.0074" fill="#235a9e"><title>v4-routes, HiGHS, без Pathfinder, 0,065029 с (статус не записан)</title></rect>
+<rect x="388.98441358024695" y="343.9355" width="11.17283950617284" height="0.0645" fill="#5488c0"><title>v4-routes, HiGHS, с Pathfinder, 0,567856 с (статус не записан)</title></rect>
+<rect x="405.07330246913585" y="343.9241" width="11.17283950617284" height="0.0759" fill="#147353"><title>v4-routes, SCIP, без Pathfinder, 0,668568 с (статус не записан)</title></rect>
+<rect x="417.6427469135803" y="343.8898" width="11.17283950617284" height="0.1102" fill="#4a9c7d"><title>v4-routes, SCIP, с Pathfinder, 0,970471 с (статус не записан)</title></rect>
+<rect x="433.7316358024692" y="343.8851" width="11.17283950617284" height="0.1149" fill="#7750a1"><title>v4-routes, FSCIP, без Pathfinder, 1,012392 с (статус не записан)</title></rect>
+<rect x="446.30108024691367" y="343.8499" width="11.17283950617284" height="0.1501" fill="#a17dc1"><title>v4-routes, FSCIP, с Pathfinder, 1,321745 с (статус не записан)</title></rect>
+<text x="416.94444444444446" y="369" text-anchor="middle" font-weight="bold">v4-routes</text>
+<rect x="476.97052469135804" y="343.9963" width="11.17283950617284" height="0.0037" fill="#235a9e"><title>v4-vrfs, HiGHS, без Pathfinder, 0,032851 с (статус не записан)</title></rect>
+<rect x="489.5399691358025" y="343.9926" width="11.17283950617284" height="0.0074" fill="#5488c0"><title>v4-vrfs, HiGHS, с Pathfinder, 0,06521 с (статус не записан)</title></rect>
+<rect x="505.6288580246914" y="343.9298" width="11.17283950617284" height="0.0702" fill="#147353"><title>v4-vrfs, SCIP, без Pathfinder, 0,618564 с (статус не записан)</title></rect>
+<rect x="518.1983024691358" y="343.9298" width="11.17283950617284" height="0.0702" fill="#4a9c7d"><title>v4-vrfs, SCIP, с Pathfinder, 0,61812 с (статус не записан)</title></rect>
+<rect x="534.2871913580246" y="343.8851" width="11.17283950617284" height="0.1149" fill="#7750a1"><title>v4-vrfs, FSCIP, без Pathfinder, 1,011944 с (статус не записан)</title></rect>
+<rect x="546.8566358024691" y="343.8851" width="11.17283950617284" height="0.1149" fill="#a17dc1"><title>v4-vrfs, FSCIP, с Pathfinder, 1,012113 с (статус не записан)</title></rect>
+<text x="517.5" y="369" text-anchor="middle" font-weight="bold">v4-vrfs</text>
+<rect x="577.5260802469136" y="343.9356" width="11.17283950617284" height="0.0644" fill="#235a9e"><title>v16-all, HiGHS, без Pathfinder, 0,567409 с (статус не записан)</title></rect>
+<rect x="590.095524691358" y="342.6974" width="11.17283950617284" height="1.3026" fill="#5488c0"><title>v16-all, HiGHS, с Pathfinder, 11,472912 с (статус не записан)</title></rect>
+<rect x="606.1844135802469" y="343.8218" width="11.17283950617284" height="0.1782" fill="#147353"><title>v16-all, SCIP, без Pathfinder, 1,56905 с (статус не записан)</title></rect>
+<rect x="618.7538580246913" y="339.1368" width="11.17283950617284" height="4.8632" fill="#4a9c7d"><title>v16-all, SCIP, с Pathfinder, 42,831884 с (статус не записан)</title></rect>
+<rect x="634.8427469135802" y="343.8270" width="11.17283950617284" height="0.1730" fill="#7750a1"><title>v16-all, FSCIP, без Pathfinder, 1,523413 с (статус не записан)</title></rect>
+<rect x="647.4121913580246" y="338.9037" width="11.17283950617284" height="5.0963" fill="#a17dc1"><title>v16-all, FSCIP, с Pathfinder, 44,885346 с (статус не записан)</title></rect>
+<text x="618.0555555555555" y="369" text-anchor="middle" font-weight="bold">v16-all</text>
+<rect x="678.0816358024691" y="343.9963" width="11.17283950617284" height="0.0037" fill="#235a9e"><title>v16-none, HiGHS, без Pathfinder, 0,032862 с (статус не записан)</title></rect>
+<rect x="690.6510802469136" y="343.9963" width="11.17283950617284" height="0.0037" fill="#5488c0"><title>v16-none, HiGHS, с Pathfinder, 0,032608 с (статус не записан)</title></rect>
+<rect x="706.7399691358024" y="343.9355" width="11.17283950617284" height="0.0645" fill="#147353"><title>v16-none, SCIP, без Pathfinder, 0,567984 с (статус не записан)</title></rect>
+<rect x="719.3094135802469" y="343.9298" width="11.17283950617284" height="0.0702" fill="#4a9c7d"><title>v16-none, SCIP, с Pathfinder, 0,617966 с (статус не записан)</title></rect>
+<rect x="735.3983024691357" y="343.8851" width="11.17283950617284" height="0.1149" fill="#7750a1"><title>v16-none, FSCIP, без Pathfinder, 1,011996 с (статус не записан)</title></rect>
+<rect x="747.9677469135802" y="343.8851" width="11.17283950617284" height="0.1149" fill="#a17dc1"><title>v16-none, FSCIP, с Pathfinder, 1,012037 с (статус не записан)</title></rect>
+<text x="718.6111111111111" y="369" text-anchor="middle" font-weight="bold">v16-none</text>
+<rect x="778.6371913580247" y="343.6846" width="11.17283950617284" height="0.3154" fill="#235a9e"><title>v64-all, HiGHS, без Pathfinder, 2,777653 с (статус не записан)</title></rect>
+<rect x="791.2066358024691" y="290.5301" width="11.17283950617284" height="53.4699" fill="#5488c0"><title>v64-all, HiGHS, с Pathfinder, 470,929543 с (статус не записан)</title></rect>
+<rect x="807.295524691358" y="343.4386" width="11.17283950617284" height="0.5614" fill="#147353"><title>v64-all, SCIP, без Pathfinder, 4,944235 с (статус не записан)</title></rect>
+<rect x="819.8649691358024" y="212.3984" width="11.17283950617284" height="131.6016" fill="#4a9c7d"><title>v64-all, SCIP, с Pathfinder, 1159,064189 с (статус не записан)</title></rect>
+<rect x="835.9538580246913" y="343.5074" width="11.17283950617284" height="0.4926" fill="#7750a1"><title>v64-all, FSCIP, без Pathfinder, 4,338747 с (статус не записан)</title></rect>
+<rect x="848.5233024691357" y="82.1818" width="11.17283950617284" height="261.8182" fill="#a17dc1"><title>v64-all, FSCIP, с Pathfinder, 2305,92996 с (статус не записан)</title></rect>
+<text x="819.1666666666666" y="369" text-anchor="middle" font-weight="bold">v64-all</text>
+<rect x="879.1927469135803" y="343.9963" width="11.17283950617284" height="0.0037" fill="#235a9e"><title>v64-none, HiGHS, без Pathfinder, 0,032708 с (статус не записан)</title></rect>
+<rect x="891.7621913580248" y="343.9963" width="11.17283950617284" height="0.0037" fill="#5488c0"><title>v64-none, HiGHS, с Pathfinder, 0,032916 с (статус не записан)</title></rect>
+<rect x="907.8510802469136" y="343.9355" width="11.17283950617284" height="0.0645" fill="#147353"><title>v64-none, SCIP, без Pathfinder, 0,56822 с (статус не записан)</title></rect>
+<rect x="920.4205246913581" y="343.9349" width="11.17283950617284" height="0.0651" fill="#4a9c7d"><title>v64-none, SCIP, с Pathfinder, 0,573747 с (статус не записан)</title></rect>
+<rect x="936.5094135802469" y="343.8850" width="11.17283950617284" height="0.1150" fill="#7750a1"><title>v64-none, FSCIP, без Pathfinder, 1,013117 с (статус не записан)</title></rect>
+<rect x="949.0788580246914" y="343.8853" width="11.17283950617284" height="0.1147" fill="#a17dc1"><title>v64-none, FSCIP, с Pathfinder, 1,010077 с (статус не записан)</title></rect>
+<text x="919.7222222222223" y="369" text-anchor="middle" font-weight="bold">v64-none</text>
+<rect x="75" y="452" width="13" height="13" rx="2" fill="#235a9e"/>
+<text x="94" y="463" font-size="13">HiGHS без Pathfinder</text>
+<rect x="75" y="475" width="13" height="13" rx="2" fill="#5488c0"/>
+<text x="94" y="486" font-size="13">HiGHS с Pathfinder</text>
+<rect x="379" y="452" width="13" height="13" rx="2" fill="#147353"/>
+<text x="398" y="463" font-size="13">SCIP без Pathfinder</text>
+<rect x="379" y="475" width="13" height="13" rx="2" fill="#4a9c7d"/>
+<text x="398" y="486" font-size="13">SCIP с Pathfinder</text>
+<rect x="683" y="452" width="13" height="13" rx="2" fill="#7750a1"/>
+<text x="702" y="463" font-size="13">FSCIP без Pathfinder</text>
+<rect x="683" y="475" width="13" height="13" rx="2" fill="#a17dc1"/>
+<text x="702" y="486" font-size="13">FSCIP с Pathfinder</text>
+</g></svg>

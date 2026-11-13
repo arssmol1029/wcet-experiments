@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 510" width="1000" height="510" role="img"><title>alternating</title>
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="Arial, sans-serif" font-size="14" fill="#182337">
+<text x="65" y="31" font-weight="bold">Время решения, с</text>
+<path d="M65 344.00H970" stroke="#dce2eb"/>
+<text x="55" y="349.0" text-anchor="end">0</text>
+<path d="M65 268.85H970" stroke="#dce2eb"/>
+<text x="55" y="273.8495425215901" text-anchor="end">0,1</text>
+<path d="M65 193.70H970" stroke="#dce2eb"/>
+<text x="55" y="198.6990850431802" text-anchor="end">0,2</text>
+<path d="M65 118.55H970" stroke="#dce2eb"/>
+<text x="55" y="123.5486275647703" text-anchor="end">0,3</text>
+<path d="M65 56V344H970" fill="none" stroke="#64748b"/>
+<rect x="75.96684027777778" y="326.8800" width="12.569444444444445" height="17.1200" fill="#235a9e"><title>rolled-16, HiGHS, без Pathfinder, 0,022781 с (OPTIMAL)</title></rect>
+<rect x="90.10746527777778" y="326.8800" width="12.569444444444445" height="17.1200" fill="#5488c0"><title>rolled-16, HiGHS, с Pathfinder, 0,022781 с (OPTIMAL)</title></rect>
+<rect x="108.20746527777777" y="313.8579" width="12.569444444444445" height="30.1421" fill="#147353"><title>rolled-16, SCIP, без Pathfinder, 0,040109 с (OPTIMAL)</title></rect>
+<rect x="122.34809027777777" y="313.8579" width="12.569444444444445" height="30.1421" fill="#4a9c7d"><title>rolled-16, SCIP, с Pathfinder, 0,040109 с (OPTIMAL)</title></rect>
+<rect x="140.44809027777777" y="285.5006" width="12.569444444444445" height="58.4994" fill="#7750a1"><title>rolled-16, FSCIP, без Pathfinder, 0,077843 с (OPTIMAL)</title></rect>
+<rect x="154.58871527777777" y="285.5006" width="12.569444444444445" height="58.4994" fill="#a17dc1"><title>rolled-16, FSCIP, с Pathfinder, 0,077843 с (OPTIMAL)</title></rect>
+<text x="121.5625" y="369" text-anchor="middle" font-weight="bold">rolled-16</text>
+<rect x="189.09184027777778" y="323.8003" width="12.569444444444445" height="20.1997" fill="#235a9e"><title>rolled-32, HiGHS, без Pathfinder, 0,026879 с (OPTIMAL)</title></rect>
+<rect x="203.23246527777778" y="323.8003" width="12.569444444444445" height="20.1997" fill="#5488c0"><title>rolled-32, HiGHS, с Pathfinder, 0,026879 с (OPTIMAL)</title></rect>
+<rect x="221.33246527777777" y="309.9974" width="12.569444444444445" height="34.0026" fill="#147353"><title>rolled-32, SCIP, без Pathfinder, 0,045246 с (OPTIMAL)</title></rect>
+<rect x="235.47309027777777" y="309.9974" width="12.569444444444445" height="34.0026" fill="#4a9c7d"><title>rolled-32, SCIP, с Pathfinder, 0,045246 с (OPTIMAL)</title></rect>
+<rect x="253.57309027777777" y="319.7692" width="12.569444444444445" height="24.2308" fill="#7750a1"><title>rolled-32, FSCIP, без Pathfinder, 0,032243 с (OPTIMAL)</title></rect>
+<rect x="267.71371527777774" y="319.7692" width="12.569444444444445" height="24.2308" fill="#a17dc1"><title>rolled-32, FSCIP, с Pathfinder, 0,032243 с (OPTIMAL)</title></rect>
+<text x="234.6875" y="369" text-anchor="middle" font-weight="bold">rolled-32</text>
+<rect x="302.2168402777778" y="326.5628" width="12.569444444444445" height="17.4372" fill="#235a9e"><title>rolled-64, HiGHS, без Pathfinder, 0,023203 с (OPTIMAL)</title></rect>
+<rect x="316.3574652777778" y="326.5628" width="12.569444444444445" height="17.4372" fill="#5488c0"><title>rolled-64, HiGHS, с Pathfinder, 0,023203 с (OPTIMAL)</title></rect>
+<rect x="334.4574652777778" y="313.4934" width="12.569444444444445" height="30.5066" fill="#147353"><title>rolled-64, SCIP, без Pathfinder, 0,040594 с (OPTIMAL)</title></rect>
+<rect x="348.5980902777778" y="313.4934" width="12.569444444444445" height="30.5066" fill="#4a9c7d"><title>rolled-64, SCIP, с Pathfinder, 0,040594 с (OPTIMAL)</title></rect>
+<rect x="366.69809027777785" y="323.8281" width="12.569444444444445" height="20.1719" fill="#7750a1"><title>rolled-64, FSCIP, без Pathfinder, 0,026842 с (OPTIMAL)</title></rect>
+<rect x="380.83871527777785" y="323.8281" width="12.569444444444445" height="20.1719" fill="#a17dc1"><title>rolled-64, FSCIP, с Pathfinder, 0,026842 с (OPTIMAL)</title></rect>
+<text x="347.8125" y="369" text-anchor="middle" font-weight="bold">rolled-64</text>
+<rect x="429.4824652777778" y="321.7059" width="12.569444444444445" height="22.2941" fill="#235a9e"><title>rolled, HiGHS, без Pathfinder, 0,029666 с (статус не записан)</title></rect>
+<rect x="447.5824652777778" y="310.3747" width="12.569444444444445" height="33.6253" fill="#147353"><title>rolled, SCIP, без Pathfinder, 0,044744 с (статус не записан)</title></rect>
+<rect x="465.68246527777785" y="324.4203" width="12.569444444444445" height="19.5797" fill="#7750a1"><title>rolled, FSCIP, без Pathfinder, 0,026054 с (статус не записан)</title></rect>
+<rect x="479.82309027777785" y="324.4203" width="12.569444444444445" height="19.5797" fill="#a17dc1"><title>rolled, FSCIP, с Pathfinder, 0,026054 с (статус не записан)</title></rect>
+<text x="460.9375" y="369" text-anchor="middle" font-weight="bold">rolled</text>
+<rect x="528.4668402777778" y="324.7262" width="12.569444444444445" height="19.2738" fill="#235a9e"><title>unrolled-16, HiGHS, без Pathfinder, 0,025647 с (OPTIMAL)</title></rect>
+<rect x="542.6074652777778" y="325.2650" width="12.569444444444445" height="18.7350" fill="#5488c0"><title>unrolled-16, HiGHS, с Pathfinder, 0,02493 с (OPTIMAL)</title></rect>
+<rect x="560.7074652777778" y="313.3830" width="12.569444444444445" height="30.6170" fill="#147353"><title>unrolled-16, SCIP, без Pathfinder, 0,040741 с (OPTIMAL)</title></rect>
+<rect x="574.8480902777778" y="313.2680" width="12.569444444444445" height="30.7320" fill="#4a9c7d"><title>unrolled-16, SCIP, с Pathfinder, 0,040894 с (OPTIMAL)</title></rect>
+<rect x="592.9480902777779" y="326.8815" width="12.569444444444445" height="17.1185" fill="#7750a1"><title>unrolled-16, FSCIP, без Pathfinder, 0,022779 с (OPTIMAL)</title></rect>
+<rect x="607.0887152777779" y="323.7883" width="12.569444444444445" height="20.2117" fill="#a17dc1"><title>unrolled-16, FSCIP, с Pathfinder, 0,026895 с (OPTIMAL)</title></rect>
+<text x="574.0625" y="369" text-anchor="middle" font-weight="bold">unrolled-16</text>
+<rect x="641.5918402777778" y="325.2530" width="12.569444444444445" height="18.7470" fill="#235a9e"><title>unrolled-32, HiGHS, без Pathfinder, 0,024946 с (OPTIMAL)</title></rect>
+<rect x="655.7324652777778" y="325.0260" width="12.569444444444445" height="18.9740" fill="#5488c0"><title>unrolled-32, HiGHS, с Pathfinder, 0,025248 с (OPTIMAL)</title></rect>
+<rect x="673.8324652777778" y="310.0403" width="12.569444444444445" height="33.9597" fill="#147353"><title>unrolled-32, SCIP, без Pathfinder, 0,045189 с (OPTIMAL)</title></rect>
+<rect x="687.9730902777778" y="277.5768" width="12.569444444444445" height="66.4232" fill="#4a9c7d"><title>unrolled-32, SCIP, с Pathfinder, 0,088387 с (OPTIMAL)</title></rect>
+<rect x="706.0730902777779" y="326.3276" width="12.569444444444445" height="17.6724" fill="#7750a1"><title>unrolled-32, FSCIP, без Pathfinder, 0,023516 с (OPTIMAL)</title></rect>
+<rect x="720.2137152777779" y="311.4486" width="12.569444444444445" height="32.5514" fill="#a17dc1"><title>unrolled-32, FSCIP, с Pathfinder, 0,043315 с (OPTIMAL)</title></rect>
+<text x="687.1875" y="369" text-anchor="middle" font-weight="bold">unrolled-32</text>
+<rect x="754.7168402777778" y="312.9523" width="12.569444444444445" height="31.0477" fill="#235a9e"><title>unrolled-64, HiGHS, без Pathfinder, 0,041314 с (OPTIMAL)</title></rect>
+<rect x="768.8574652777778" y="313.4310" width="12.569444444444445" height="30.5690" fill="#5488c0"><title>unrolled-64, HiGHS, с Pathfinder, 0,040677 с (OPTIMAL)</title></rect>
+<rect x="786.9574652777778" y="288.0693" width="12.569444444444445" height="55.9307" fill="#147353"><title>unrolled-64, SCIP, без Pathfinder, 0,074425 с (OPTIMAL)</title></rect>
+<rect x="801.0980902777778" y="82.1818" width="12.569444444444445" height="261.8182" fill="#4a9c7d"><title>unrolled-64, SCIP, с Pathfinder, 0,348392 с (OPTIMAL)</title></rect>
+<rect x="819.1980902777779" y="247.4039" width="12.569444444444445" height="96.5961" fill="#7750a1"><title>unrolled-64, FSCIP, без Pathfinder, 0,128537 с (OPTIMAL)</title></rect>
+<rect x="833.3387152777779" y="124.2315" width="12.569444444444445" height="219.7685" fill="#a17dc1"><title>unrolled-64, FSCIP, с Pathfinder, 0,292438 с (OPTIMAL)</title></rect>
+<text x="800.3125" y="369" text-anchor="middle" font-weight="bold">unrolled-64</text>
+<rect x="867.8418402777778" y="326.0856" width="12.569444444444445" height="17.9144" fill="#235a9e"><title>unrolled, HiGHS, без Pathfinder, 0,023838 с (статус не записан)</title></rect>
+<rect x="881.9824652777778" y="323.9070" width="12.569444444444445" height="20.0930" fill="#5488c0"><title>unrolled, HiGHS, с Pathfinder, 0,026737 с (статус не записан)</title></rect>
+<rect x="900.0824652777778" y="314.5553" width="12.569444444444445" height="29.4447" fill="#147353"><title>unrolled, SCIP, без Pathfinder, 0,039181 с (статус не записан)</title></rect>
+<rect x="914.2230902777778" y="308.9416" width="12.569444444444445" height="35.0584" fill="#4a9c7d"><title>unrolled, SCIP, с Pathfinder, 0,046651 с (статус не записан)</title></rect>
+<rect x="932.3230902777779" y="326.2810" width="12.569444444444445" height="17.7190" fill="#7750a1"><title>unrolled, FSCIP, без Pathfinder, 0,023578 с (статус не записан)</title></rect>
+<rect x="946.4637152777779" y="287.8709" width="12.569444444444445" height="56.1291" fill="#a17dc1"><title>unrolled, FSCIP, с Pathfinder, 0,074689 с (статус не записан)</title></rect>
+<text x="913.4375" y="369" text-anchor="middle" font-weight="bold">unrolled</text>
+<rect x="75" y="452" width="13" height="13" rx="2" fill="#235a9e"/>
+<text x="94" y="463" font-size="13">HiGHS без Pathfinder</text>
+<rect x="75" y="475" width="13" height="13" rx="2" fill="#5488c0"/>
+<text x="94" y="486" font-size="13">HiGHS с Pathfinder</text>
+<rect x="379" y="452" width="13" height="13" rx="2" fill="#147353"/>
+<text x="398" y="463" font-size="13">SCIP без Pathfinder</text>
+<rect x="379" y="475" width="13" height="13" rx="2" fill="#4a9c7d"/>
+<text x="398" y="486" font-size="13">SCIP с Pathfinder</text>
+<rect x="683" y="452" width="13" height="13" rx="2" fill="#7750a1"/>
+<text x="702" y="463" font-size="13">FSCIP без Pathfinder</text>
+<rect x="683" y="475" width="13" height="13" rx="2" fill="#a17dc1"/>
+<text x="702" y="486" font-size="13">FSCIP с Pathfinder</text>
+</g></svg>

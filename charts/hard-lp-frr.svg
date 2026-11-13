@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 510" width="1000" height="510" role="img"><title>frr</title>
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="Arial, sans-serif" font-size="14" fill="#182337">
+<text x="65" y="31" font-weight="bold">Время решения, с</text>
+<path d="M65 344.00H970" stroke="#dce2eb"/>
+<text x="55" y="349.0" text-anchor="end">0</text>
+<path d="M65 230.46H970" stroke="#dce2eb"/>
+<text x="55" y="235.45874687515155" text-anchor="end">1000</text>
+<path d="M65 116.92H970" stroke="#dce2eb"/>
+<text x="55" y="121.9174937503031" text-anchor="end">2000</text>
+<path d="M65 56V344H970" fill="none" stroke="#64748b"/>
+<rect x="175.17000000000002" y="342.6977" width="32" height="1.3023" fill="#235a9e"><title>16, HiGHS, on, 11,47 с (решено)</title></rect>
+<rect x="211.17000000000002" y="166.3227" width="32" height="177.6773" fill="#5488c0"><title>16, HiGHS, off, 1564,87 с (решено)</title></rect>
+<rect x="257.25" y="339.1370" width="32" height="4.8630" fill="#147353"><title>16, SCIP, on, 42,83 с (решено)</title></rect>
+<rect x="293.25" y="139.6257" width="32" height="204.3743" fill="#4a9c7d"><title>16, SCIP, off, 1800 с (TL)</title></rect>
+<text x="309.25" y="131.6257443752728" text-anchor="middle" fill="#be142b" font-weight="bold">TL</text>
+<rect x="339.33" y="338.9031" width="32" height="5.0969" fill="#7750a1"><title>16, FSCIP, on, 44,89 с (решено)</title></rect>
+<rect x="375.33" y="139.6257" width="32" height="204.3743" fill="#a17dc1"><title>16, FSCIP, off, 1800 с (TL)</title></rect>
+<text x="391.33" y="131.6257443752728" text-anchor="middle" fill="#be142b" font-weight="bold">TL</text>
+<text x="291.25" y="369" text-anchor="middle" font-weight="bold">16</text>
+<rect x="627.67" y="290.5300" width="32" height="53.4700" fill="#235a9e"><title>64, HiGHS, on, 470,93 с (решено)</title></rect>
+<rect x="663.67" y="139.6257" width="32" height="204.3743" fill="#5488c0"><title>64, HiGHS, off, 1800 с (TL)</title></rect>
+<text x="679.67" y="131.6257443752728" text-anchor="middle" fill="#be142b" font-weight="bold">TL</text>
+<rect x="709.75" y="298.7799" width="32" height="45.2201" fill="#147353"><title>64, SCIP, on, 398,27 с (решено)</title></rect>
+<rect x="745.75" y="139.6257" width="32" height="204.3743" fill="#4a9c7d"><title>64, SCIP, off, 1800 с (TL)</title></rect>
+<text x="761.75" y="131.6257443752728" text-anchor="middle" fill="#be142b" font-weight="bold">TL</text>
+<rect x="791.83" y="82.1818" width="32" height="261.8182" fill="#7750a1"><title>64, FSCIP, on, 2305,93 с (решено)</title></rect>
+<rect x="827.83" y="139.6257" width="32" height="204.3743" fill="#a17dc1"><title>64, FSCIP, off, 1800 с (TL)</title></rect>
+<text x="843.83" y="131.6257443752728" text-anchor="middle" fill="#be142b" font-weight="bold">TL</text>
+<text x="743.75" y="369" text-anchor="middle" font-weight="bold">64</text>
+<rect x="75" y="452" width="13" height="13" rx="2" fill="#235a9e"/>
+<text x="94" y="463" font-size="13">HiGHS on</text>
+<rect x="75" y="475" width="13" height="13" rx="2" fill="#5488c0"/>
+<text x="94" y="486" font-size="13">HiGHS off</text>
+<rect x="379" y="452" width="13" height="13" rx="2" fill="#147353"/>
+<text x="398" y="463" font-size="13">SCIP on</text>
+<rect x="379" y="475" width="13" height="13" rx="2" fill="#4a9c7d"/>
+<text x="398" y="486" font-size="13">SCIP off</text>
+<rect x="683" y="452" width="13" height="13" rx="2" fill="#7750a1"/>
+<text x="702" y="463" font-size="13">FSCIP on</text>
+<rect x="683" y="475" width="13" height="13" rx="2" fill="#a17dc1"/>
+<text x="702" y="486" font-size="13">FSCIP off</text>
+</g></svg>
