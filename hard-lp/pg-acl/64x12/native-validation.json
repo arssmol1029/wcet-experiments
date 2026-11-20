@@ -1,0 +1,11 @@
+{
+  "boolean_classes": 4096,
+  "mismatches": 0,
+  "unused_input_words": "zero",
+  "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)",
+  "source_sha256": {
+    "reference": "3e16b6152017a05295f85b749e93efeecc81c8e102a088045c798029010c2557",
+    "unrolled": "5ef01d9f0ded4660dc80b884c1586889d751bd2a2e40b2861106763b2bfd6934"
+  },
+  "scope": "native enumeration; ARM FFX and ordinary FF not checked"
+}

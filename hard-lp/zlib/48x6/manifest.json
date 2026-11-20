@@ -1,0 +1,12 @@
+{
+  "family": "zlib",
+  "size": 48,
+  "template_sha256": "3e5800972f19e20c43a62c07ad2098f30fe7fb9d0ceeb04d3242df590bcd3cd9",
+  "source_sha256": {
+    "reference": "b8c9962c3826eae0a87a5930d65fe33a8f012d66372a174d511476a96d58a0fd",
+    "unrolled": "3440b9cfa7179196fcae466bc85f700e338646524d9aa0bbbcf5fe36fec4206d"
+  },
+  "contract": "first size candidates; match_start rescaled to size; original 56-entry storage retained",
+  "ffx_status": "not generated or verified",
+  "wcet_claim": false
+}

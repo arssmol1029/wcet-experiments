@@ -1,0 +1,11 @@
+{
+  "classes": 256,
+  "mismatches": 0,
+  "contract": "finite normalized input classes",
+  "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)",
+  "source_sha256": {
+    "reference": "2711dfe207a2a3de108bd081d78b4fd36fe8597e674c739d9b6a935a9acf4dee",
+    "unrolled": "1b6b3a85b176fab92d67af0197c75ce0d5f7ad11e6bb8bd297aef9ad1a8b8a7a"
+  },
+  "scope": "native equivalence only; ARM FFX and ordinary FF not checked"
+}

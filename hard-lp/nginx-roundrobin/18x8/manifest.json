@@ -1,0 +1,15 @@
+{
+  "family": "nginx-roundrobin",
+  "size": 18,
+  "template_sha256": {
+    "reference": "83f5e728b9535b8c6038b73405efa3e0115a797c19716262fdbcd9dbdd93a5bd",
+    "unrolled": "e9af65d4948d0113db62c6d1e71b5fc75d0ba016e96b32c7b51d03791c2f107c"
+  },
+  "source_sha256": {
+    "reference": "f6c8300436cca002dcb48de9b2805525552f167599d24a146ef4f576714ff32b",
+    "unrolled": "7fac326fe29f3f7a794acf13e5331cef57e6cec72442f359032c54bd533138dc"
+  },
+  "contract": "first size peers, retained 20-slot storage; boolean wrapper requires validation",
+  "ffx_status": "not generated or verified",
+  "wcet_claim": false
+}

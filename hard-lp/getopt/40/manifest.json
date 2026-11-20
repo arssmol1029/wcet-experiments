@@ -1,0 +1,12 @@
+{
+  "family": "getopt",
+  "size": 40,
+  "template_size": 64,
+  "template_sha256": "17e4b606688828a371feb73b25fa713f9067b7a43f06caab3005cfdfe81742db",
+  "unrolled_sha256": "1c8c148fe92d9a154125341ad8c73de069fb29932a923c758964838a0acafff6",
+  "reference_sha256": "a1f6499c8f52aa111b7ad3585f1fbb95eee7ce08c8392c758e817e6308794ea7",
+  "seed": 0,
+  "contract": "first size entries of template; original global storage retained",
+  "ffx_status": "not generated or verified",
+  "wcet_claim": false
+}

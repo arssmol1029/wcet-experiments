@@ -1,0 +1,12 @@
+{
+  "binary_cases": 64,
+  "random_cases": 1000,
+  "seed": 0,
+  "mismatches": 0,
+  "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)",
+  "source_sha256": {
+    "reference": "aab0d67f16ff8d7669aa32f21761973f757257c672f98c77464d9322dfe3bdc7",
+    "unrolled": "d5adbd095ba665049746824e49a37cbe64c3e5c3aa1c58018a563e21e9cf21df"
+  },
+  "scope": "native enumeration and sample; ARM FFX and ordinary FF not checked"
+}

@@ -1,0 +1,13 @@
+{
+  "family": "pg-acl",
+  "size": 80,
+  "conditional_rules": 78,
+  "template_sha256": "b0795dd7ca6758c45b6fd4424f3a6a1320dd9eaea9752e62ede174b99b70e7b1",
+  "source_sha256": {
+    "reference": "76cc968d2be14e1318cf527390091697d8780f70c09c10edd9be22e182a9d89e",
+    "unrolled": "156c921823f82f44bac8e635d5440c32fa9404dea4d1913cc30f985afa52a6b3"
+  },
+  "contract": "first two unconditional and first size-2 conditional rules; 12 boolean input classes",
+  "ffx_status": "not generated or verified",
+  "wcet_claim": false
+}

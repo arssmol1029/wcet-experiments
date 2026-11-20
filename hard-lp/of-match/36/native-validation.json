@@ -1,0 +1,11 @@
+{
+  "cases": 1110,
+  "seed": 0,
+  "mismatches": 0,
+  "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)",
+  "source_sha256": {
+    "reference": "ec0e6c82ef6f4a7f18923e8429dbe319a137723eb8c9768625e5d713dc090a8c",
+    "unrolled": "d192c8166e1fdaf0d95cdd4b3b04d218320333d7da53eb501143178e3a28729c"
+  },
+  "coverage": "native sample, not exhaustive; output and global buffers included"
+}

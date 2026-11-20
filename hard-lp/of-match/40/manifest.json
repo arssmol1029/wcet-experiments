@@ -1,0 +1,12 @@
+{
+  "family": "of-match",
+  "size": 40,
+  "template_size": 48,
+  "template_sha256": "1318cb9483cedc6b56ea52bc4dc808b29ef2d7148d1add6b44543659ebd071b2",
+  "unrolled_sha256": "95659cecaf13795813c5713718e15bbc056d486278ee289e7c9983b56d202eb9",
+  "reference_sha256": "3176fa6f41e7b4c378cef44b2c8b50575c6098df551b8945658c980e99cf2dfb",
+  "seed": 0,
+  "contract": "first size entries of template; original global storage retained",
+  "ffx_status": "not generated or verified",
+  "wcet_claim": false
+}
